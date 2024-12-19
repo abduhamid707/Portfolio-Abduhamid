@@ -1,0 +1,23 @@
+/* .saxxsa{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+
+}
+/* .saxsaxsaxsa .card{
+    width: 800px;
+} */ 
+
+/* .sasxaxsa{
+    position: fixed;
+} */
+ /* Tailwind config orqali qo'shishingiz mumkin */
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-none {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
