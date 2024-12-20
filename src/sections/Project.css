@@ -12,12 +12,17 @@
     position: fixed;
 } */
  /* Tailwind config orqali qo'shishingiz mumkin */
-.scrollbar-none::-webkit-scrollbar {
+/* .scrollbar-none::-webkit-scrollbar {
     display: none;
   }
   
   .scrollbar-none {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+  }
+   */
+
+   .overflow-x-auto {
+    background: none; /* Backgroundni olib tashlash */
   }
   

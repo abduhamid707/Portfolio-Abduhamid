@@ -1,5 +1,56 @@
 // local.js
 const portfolioData = {
+  aboutme: [
+    {
+      key: 'name',
+      label: 'Ism',
+      value: 'Abduhamid Botirov',
+    },
+    {
+      key: 'age',
+      label: 'Yosh',
+      value: '25',
+    },
+    {
+      key: 'profession',
+      label: 'Kasb',
+      value: 'Web Dasturchi',
+    },
+    {
+      key: 'experience',
+      label: 'Umumiy Tajriba',
+      value: '5 yil',
+    },
+    {
+      key: 'goal',
+      label: 'Maqsad',
+      value: 'Zamonaviy texnologiyalar asosida samarali veb ilovalar yaratish.',
+    },
+    {
+      key: 'education',
+      label: "O'qigan joylarim",
+      value: 'TDTU, Kompyuter fanlari fakulteti',
+    },
+    {
+      key: 'character',
+      label: 'Xarakterim',
+      value: 'Javobgarlikni yaxshi his qilaman, jamoada ishlashga moyilman.',
+    },
+    {
+      key: 'skills',
+      label: 'Qobiliyatlar',
+      value: 'JavaScript, React, Node.js, TailwindCSS, HTML, CSS',
+    },
+    {
+      key: 'images',
+      label: 'Bu yerni bosing',
+      imgs: [
+        '../../public/me2.png',
+        '../../public/me2.png',
+        '../../public/me2.png',
+      ],
+    },
+  ],
   experience: [
     {
       company: 'ABC Ltd.',
