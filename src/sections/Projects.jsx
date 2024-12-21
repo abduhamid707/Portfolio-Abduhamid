@@ -186,13 +186,15 @@
 
 // export default Projects;
 
-
-
 import { useState } from 'react';
 import portfolioData from '../db/local.js';
 import './Project.css';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n.js';
 
 const Projects = () => {
+    const { t } = useTranslation();
+
     const projectDatas = portfolioData.projects;
     const [categoryFilter, setCategoryFilter] = useState('');
     const [techFilter, setTechFilter] = useState('');
@@ -223,18 +225,14 @@ const Projects = () => {
 
     // Toggle the description visibility
     const handleCardClick = (id) => {
-        if (expandedProject === id) {
-            setExpandedProject(null);  // Close the card if it's already open
-        } else {
-            setExpandedProject(id);  // Open the selected card
-        }
+        setExpandedProject(expandedProject === id ? null : id);  // Toggle the selected card
     };
 
     return (
         <section className="projects mt-24 bg-primary">
             <div className="container mx-auto px-4">
                 <h2 className="text-2xl sm:text-3xl font-bold text-accent mb-4 text-left">
-                    Projects
+                    {t("projects")}
                 </h2>
 
                 {/* Filters */}
@@ -246,7 +244,7 @@ const Projects = () => {
                         className="font-bold text-white bg-transparent border border-white rounded-md px-2 py-1 appearance-none"
                     >
                         <option value="" className="text-accent bg-primary">
-                            All Categories
+                            {t("allCats")}
                         </option>
                         {categories.map((category, index) => (
                             <option key={index} value={category} className="text-accent bg-primary">
@@ -255,17 +253,13 @@ const Projects = () => {
                         ))}
                     </select>
 
-
                     {/* Tech Filter */}
                     <select
                         value={techFilter}
                         onChange={handleTechChange}
-                        // className="font-bold  appearance-none bg-transparent border border-accent rounded-md px-2 py-1"
-                        //  className="font-bold text-white appearance-none bg-transparent border border-accent rounded-md px-2 py-1"
                         className="font-bold text-white bg-transparent border border-white rounded-md px-2 py-1 appearance-none"
-
                     >
-                        <option value="" className="text-accent">All Technologies</option>
+                        <option value="" className="text-accent">{t("allTechs")}</option>
                         {techs.map((tech, index) => (
                             <option key={index} value={tech} className="text-accent">
                                 {tech}
@@ -285,13 +279,16 @@ const Projects = () => {
                             />
                             <div className="p-4">
                                 <div className="flex justify-between items-center mb-2">
-                                    <h3 className="text-xl font-semibold text-accent">{item.title}</h3>
+                                    <h3 className="text-xl font-semibold text-accent">{t(item.title?.[i18n.language])}</h3>
                                     <p className="text-sm text-gray-500">{item.category}</p>
                                 </div>
                                 <p className="text-sm text-light mb-2 text-left">
                                     {expandedProject === item.id
-                                        ? item.description  // Show full description if the project is expanded
-                                        : item.description.substring(0, 80)} <span className='text-gray-500 cursor-pointer' onClick={() => handleCardClick(item.id)}>{expandedProject === item.id ? " close" : "...more"}</span>
+                                        ? t(item.description?.[i18n.language])
+                                        : t(item.description?.[i18n.language]).substring(0, 80)}
+                                    <span className='text-gray-500 cursor-pointer' onClick={() => handleCardClick(item.id)}>
+                                        {expandedProject === item.id ? " close" : "...more"}
+                                    </span>
                                 </p>
                                 <p className="text-sm text-light mb-2 text-left">
                                     <strong>Technologies:</strong> {item.techs.join(', ')}

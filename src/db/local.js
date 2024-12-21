@@ -157,6 +157,23 @@ const portfolioData = {
       githubLink: 'https://github.com/username/project-one',
       liveDemo: 'https://projectone.live',
     },
+    {
+      id: 3,
+      title: {
+        uz: 'ShopingUz2',
+        ru: 'ShopingUz22',
+        eng: 'ShopingUz22',
+      },
+      description: {
+        uz: "Bu loyiha haqida qisqacha ma'lumot. Loyihadagi erishilgan natijalar.",
+        ru: 'Краткое описание проекта. Что было достигнуто в проекте.',
+        eng: 'This is a brief description of the project. It includes information on what was achieved in the project.',
+      },
+      category: 'traveling',
+      techs: ['Node Js', 'Typescript', 'Html/Css'],
+      githubLink: 'https://github.com/username/project-one',
+      liveDemo: 'https://projectone.live',
+    },
   ],
   contact: {
     phone: '+998997867075',
