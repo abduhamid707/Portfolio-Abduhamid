@@ -234,7 +234,7 @@ const Projects = () => {
 
     const handleMouseDown = (e) => {
         console.log(1);
-        
+
         isMouseDown.current = true;
         startX.current = e.clientX;
         scrollLeft.current = containerRef.current.scrollLeft;
@@ -277,10 +277,9 @@ const Projects = () => {
     return (
         <section className="projects mt-24">
             <div className="container mx-auto px-4">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-accent mb-4 sm:mb-0 text-left">Projects</h2>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-5">
-                    <h2 className="text-2xl sm:text-3xl font-bold text-accent mb-4 sm:mb-0">Projects</h2>
-
-                    <div className="overflow-x-auto  flex gap-3 w-full sm:w-[80%] flex-wrap">
+                    <div className="overflow-x-auto  flex gap-3 w-full sm:w-[80%] flex-wrap mx-auto mt-5">
                         {sortedCategories.map((category, index) => (
                             <span
                                 key={index}
@@ -297,7 +296,7 @@ const Projects = () => {
                 <div
                     ref={containerRef}
                     className="overflow-x-auto w-full flex gap-6 flex-nowrap scrollbar-none py-4 "
-                    style={{ cursor: 'grab',overflowY: 'hidden' }}
+                    style={{ cursor: 'grab', overflowY: 'hidden' }}
                 >
                     {sortedCategories.map((category) =>
                         groupedProjects[category]?.map((project) => (
