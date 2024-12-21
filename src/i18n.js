@@ -1,25 +1,67 @@
 // src/i18n.js
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-
+import i18n from 'i18next'
+import { initReactI18next } from 'react-i18next'
+import portfolioData from './db/local.js'
 // Til sozlamalari
 const resources = {
   uz: {
     translation: {
-      "name": "Abduhamid Botirov",
-    }
+      fullName: 'Abduhamid Botirov',
+      thAboutMeData: 'Malumot',
+      thAboutMeInfo: 'Tasnif',
+      aboutMe: 'Mening haqimda',
+      experience: 'Tajribalarim',
+      experienceTableHrComp: 'Kompaniya',
+      experienceTableHrDate: 'Muddati',
+      experienceTableHrPositon: 'Lavozim',
+      experienceTableHrAction: 'Hodisalar',
+      visit: 'Tashrif buyurish',
+      projects: 'Loyihalar',
+      contact: 'Aloqa',
+      feedback: 'Fikrlaringizni ulashing',
+      copyright: '© 2024 Abduhamid Botirov. Barcha huquqlar himoyalangan.',
+    },
+    datas: portfolioData,
   },
   ru: {
     translation: {
-      "name": "Абдухамид Ботиров",
-    }
+      fullName: 'Абдухамид Ботиров',
+      thAboutMeData: 'Информация',
+      thAboutMeInfo: 'Классификация',
+      aboutMe: 'Обо мне',
+      experience: 'Мой опыт',
+      experienceTableHrComp: 'Компания',
+      experienceTableHrDate: 'Срок',
+      experienceTableHrPositon: 'Должность',
+      experienceTableHrAction: 'Действия',
+      visit: 'Посетить',
+      projects: 'Проекты',
+      contact: 'Контакт',
+      feedback: 'Поделитесь своими мыслями',
+      copyright: '© 2024 Абдухамид Ботиров. Все права защищены.',
+    },
+    datas: portfolioData,
   },
   eng: {
     translation: {
-      "name": "Abduhamid Botirov",
-    }
-  }
-};
+      fullName: 'Abduhamid Botirov',
+      thAboutMeData: 'Information',
+      thAboutMeInfo: 'Classification',
+      aboutMe: 'About Me',
+      experience: 'My Experience',
+      experienceTableHrComp: 'Company',
+      experienceTableHrDate: 'Duration',
+      experienceTableHrPositon: 'Position',
+      experienceTableHrAction: 'Actions',
+      visit: 'Visit',
+      projects: 'Projects',
+      contact: 'Contact',
+      feedback: 'Share Your Thoughts',
+      copyright: '© 2024 Abduhamid Botirov. All rights reserved.',
+    },
+    datas: portfolioData,
+  },
+}
 
 i18n
   .use(initReactI18next) // React bilan integratsiya qilish
@@ -28,8 +70,8 @@ i18n
     lng: 'uz', // dastlabki til
     fallbackLng: 'uz', // agar til topilmasa, shu tilni ishlatish
     interpolation: {
-      escapeValue: false // XSS himoyasi
-    }
-  });
+      escapeValue: false, // XSS himoyasi
+    },
+  })
 
-export default i18n;
+export default i18n

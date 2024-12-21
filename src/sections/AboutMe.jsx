@@ -1,35 +1,40 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Modal from 'react-modal';
 import portfolioData from '../db/local.js';
 import 'swiper/css';
-import { Swiper, SwiperSlide } from 'swiper/react';  // SwiperJS komponentlari
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { useTranslation } from 'react-i18next';
 
-// Modal uchun root elementni belgilash
 Modal.setAppElement('#root');
 
 const AboutMe = () => {
+    const { t, i18n } = useTranslation();
+
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const images = portfolioData.aboutme.find(item => item.key === 'images')?.imgs || [];
-    // Modalni ochish
+    const [images, setImages] = useState([]);
+
     const openModal = (image) => {
         setIsModalOpen(true);
+        setImages([image]);
     };
 
-    // Modalni yopish
     const closeModal = () => {
         setIsModalOpen(false);
+        setImages([]);
     };
 
     return (
         <section className="about-me mt-24">
             <div className="container mx-auto px-4">
-                <h2 className="text-2xl sm:text-3xl font-bold text-accent mb-5 text-left">About Me</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-accent mb-5 text-left">
+                    {t('aboutMe')}
+                </h2>
                 <div className="overflow-x-auto">
                     <table className="table-auto w-full shadow-md rounded-md text-left">
                         <thead>
                             <tr>
-                                <th className="px-4 py-2 text-left border border-accent">Ma'lumotlar</th>
-                                <th className="px-4 py-2 text-left border border-accent">Tavsif</th>
+                                <th className="px-4 py-2 text-left border border-accent">{t('thAboutMeData')}</th>
+                                <th className="px-4 py-2 text-left border border-accent">{t('thAboutMeInfo')}</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -37,17 +42,17 @@ const AboutMe = () => {
                                 if (item.key === 'images') {
                                     return (
                                         <tr key={item.key} className="border-t border-accent">
-                                            <th className="px-4 py-2 border border-accent">{item.label}</th>
-                                            <td className="px-4 py-2 border border-accent cursor-pointer" onClick={() => openModal(item.imgs)}>
-                                                {item.label}
+                                            <th className="px-4 py-2 border border-accent">{t(item.label?.[i18n.language])}</th>
+                                            <td className="px-4 py-2 border border-accent cursor-pointer" onClick={() => openModal(item.imgs[0])}>
+                                                {t(item.label?.[i18n.language])}
                                             </td>
                                         </tr>
                                     );
                                 } else {
                                     return (
                                         <tr key={item.key} className="border-t border-accent">
-                                            <th className="px-4 py-2 border border-accent">{item.label}</th>
-                                            <td className="px-4 py-2 border border-accent">{item.value}</td>
+                                            <th className="px-4 py-2 border border-accent">{t(item.label?.[i18n.language])}</th>
+                                            <td className="px-4 py-2 border border-accent">{t(item.value?.[i18n.language])}</td>
                                         </tr>
                                     );
                                 }

@@ -3,47 +3,115 @@ const portfolioData = {
   aboutme: [
     {
       key: 'name',
-      label: 'Ism',
-      value: 'Abduhamid Botirov',
+      label: {
+        uz: 'Ism',
+        ru: 'Имя',
+        eng: 'Name',
+      },
+      value: {
+        uz: 'Abduhamid Botirov',
+        ru: 'Абдухамид Ботиров',
+        eng: 'Abduhamid Botirov',
+      },
     },
     {
       key: 'age',
-      label: 'Yosh',
-      value: '25',
+      label: {
+        uz: 'Yosh',
+        ru: 'Возраст',
+        eng: 'Age',
+      },
+      value: {
+        uz: '25',
+        ru: '25',
+        eng: '25',
+      },
     },
     {
       key: 'profession',
-      label: 'Kasb',
-      value: 'Web Dasturchi',
+      label: {
+        uz: 'Kasb',
+        ru: 'Профессия',
+        eng: 'Profession',
+      },
+      value: {
+        uz: 'Web Dasturchi',
+        ru: 'Веб-разработчик',
+        eng: 'Web Developer',
+      },
     },
     {
       key: 'experience',
-      label: 'Umumiy Tajriba',
-      value: '5 yil',
+      label: {
+        uz: 'Umumiy Tajriba',
+        ru: 'Общий опыт',
+        eng: 'Total Experience',
+      },
+      value: {
+        uz: '5 yil',
+        ru: '5 лет',
+        eng: '5 years',
+      },
     },
     {
       key: 'goal',
-      label: 'Maqsad',
-      value: 'Zamonaviy texnologiyalar asosida samarali veb ilovalar yaratish.',
+      label: {
+        uz: 'Maqsad',
+        ru: 'Цель',
+        eng: 'Goal',
+      },
+      value: {
+        uz: 'Zamonaviy texnologiyalar asosida samarali veb ilovalar yaratish.',
+        ru: 'Создание эффективных веб-приложений на основе современных технологий.',
+        eng: 'Creating efficient web applications based on modern technologies.',
+      },
     },
     {
       key: 'education',
-      label: "O'qigan joylarim",
-      value: 'TDTU, Kompyuter fanlari fakulteti',
+      label: {
+        uz: "O'qigan joylarim",
+        ru: 'Места учебы',
+        eng: 'Education',
+      },
+      value: {
+        uz: 'TDTU, Kompyuter fanlari fakulteti',
+        ru: 'ТДТУ, Факультет компьютерных наук',
+        eng: 'TDTU, Faculty of Computer Science',
+      },
     },
     {
       key: 'character',
-      label: 'Xarakterim',
-      value: 'Javobgarlikni yaxshi his qilaman, jamoada ishlashga moyilman.',
+      label: {
+        uz: 'Xarakterim',
+        ru: 'Мой характер',
+        eng: 'Character',
+      },
+      value: {
+        uz: 'Javobgarlikni yaxshi his qilaman, jamoada ishlashga moyilman.',
+        ru: 'Я чувствую ответственность и склонен работать в команде.',
+        eng: 'I feel responsible and tend to work in a team.',
+      },
     },
     {
       key: 'skills',
-      label: 'Qobiliyatlar',
-      value: 'JavaScript, React, Node.js, TailwindCSS, HTML, CSS',
+      label: {
+        uz: 'Qobiliyatlar',
+        ru: 'Навыки',
+        eng: 'Skills',
+      },
+      value: {
+        uz: 'JavaScript, React, Node.js, TailwindCSS, HTML, CSS',
+        ru: 'JavaScript, React, Node.js, TailwindCSS, HTML, CSS',
+        eng: 'JavaScript, React, Node.js, TailwindCSS, HTML, CSS',
+      },
     },
     {
       key: 'images',
-      label: 'Bu yerni bosing',
+      label: {
+        uz: 'Bu yerni bosing',
+        ru: 'Нажмите сюда',
+        eng: 'Click here',
+      },
       imgs: [
         '../../public/me2.png',
         '../../public/me2.png',
@@ -53,74 +121,41 @@ const portfolioData = {
   ],
   experience: [
     {
-      company: 'ABC Ltd.',
-      duration: 'Jan 2021 - Dec 2022',
-      position: 'Web Developer',
+      company: {
+        uz: 'ABC MChJ',
+        ru: 'ООО АБЦ',
+        eng: 'ABC Ltd.',
+      },
+      duration: {
+        uz: 'Yanvar 2021 - Dekabr 2022',
+        ru: 'Январь 2021 - Декабрь 2022',
+        eng: 'Jan 2021 - Dec 2022',
+      },
+      position: {
+        uz: 'Veb Dasturchi',
+        ru: 'Веб-разработчик',
+        eng: 'Web Developer',
+      },
       link: 'https://abc.com',
-    },
-    {
-      company: 'XYZ Inc.',
-      duration: 'Jan 2020 - Dec 2020',
-      position: 'Frontend Developer',
-      link: 'https://xyz.com',
-    },
-    {
-      company: 'QWE Solutions',
-      duration: 'Jan 2019 - Dec 2019',
-      position: 'Intern',
-      link: 'https://qwe.com',
     },
   ],
   projects: [
     {
       id: 1,
-      title: 'ShopingUz',
-      description:
-        'This is a brief description of Project One. It includes information on what was achieved in the project.',
-      category: 'ecommercy',
+      title: {
+        uz: 'ShopingUz',
+        ru: 'ShopingUz',
+        eng: 'ShopingUz',
+      },
+      description: {
+        uz: "Bu loyiha haqida qisqacha ma'lumot. Loyihadagi erishilgan natijalar.",
+        ru: 'Краткое описание проекта. Что было достигнуто в проекте.',
+        eng: 'This is a brief description of the project. It includes information on what was achieved in the project.',
+      },
+      category: 'e-commerce',
       techs: ['Node Js', 'ReactJs', 'Html/Css'],
-      githubLink: 'https://github.com/username/project-one', // GitHub havolasi
-      liveDemo: 'https://projectone.live', // Loyihaning faol sahifasi
-    },
-    {
-      id: 2,
-      title: 'FoodieHub',
-      description:
-        'FoodieHub is a platform for food lovers where users can share recipes, review dishes, and discover new restaurants.',
-      category: 'food',
-      techs: ['Angular', 'Node Js', 'MongoDB'],
-      githubLink: 'https://github.com/username/foodiehub',
-      liveDemo: 'https://foodiehub.live',
-    },
-    {
-      id: 3,
-      title: 'FitTrack',
-      description:
-        'FitTrack is a fitness app designed to help users track their workouts, set goals, and monitor their progress.',
-      category: 'fitness',
-      techs: ['React Native', 'Firebase', 'Express'],
-      githubLink: 'https://github.com/username/fittrack',
-      liveDemo: 'https://fittrack.live',
-    },
-    {
-      id: 4,
-      title: 'TaskMaster',
-      description:
-        'TaskMaster is a productivity app that allows users to organize their tasks, set deadlines, and track their productivity.',
-      category: 'productivity',
-      techs: ['VueJs', 'Vuetify', 'Node Js'],
-      githubLink: 'https://github.com/username/taskmaster',
-      liveDemo: 'https://taskmaster.live',
-    },
-    {
-      id: 5,
-      title: 'TravelPal',
-      description:
-        'TravelPal is a travel planning app that helps users discover travel destinations, create itineraries, and share experiences.',
-      category: 'travel',
-      techs: ['ReactJs', 'Node Js', 'MongoDB'],
-      githubLink: 'https://github.com/username/travelpal',
-      liveDemo: 'https://travelpal.live',
+      githubLink: 'https://github.com/username/project-one',
+      liveDemo: 'https://projectone.live',
     },
   ],
   contact: {
