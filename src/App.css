@@ -67,6 +67,20 @@ iframe::-ms-scrollbar {
   margin-top: 70px;
 }
 
+/* App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+
 /* Telefon va planshet xolatida */
 @media (max-width: 1024px) {
   .projects {

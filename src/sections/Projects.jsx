@@ -229,7 +229,7 @@ const Projects = () => {
     };
 
     return (
-        <section className="projects mt-24 bg-primary">
+        <section className="projects mt-24 ">
             <div className="container mx-auto px-4">
                 <h2 className="text-2xl sm:text-3xl font-bold text-accent mb-4 text-left">
                     {t("projects")}
