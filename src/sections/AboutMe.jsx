@@ -63,7 +63,7 @@ const AboutMe = () => {
             </div>
 
             {/* Modal uchun image gallery */}
-            <Modal
+            {/* <Modal
                 isOpen={isModalOpen}
                 onRequestClose={closeModal}
                 className="modal-content p-4 rounded-lg shadow-lg w-full sm:w-96 mx-auto"
@@ -72,7 +72,6 @@ const AboutMe = () => {
                 <div className="flex justify-between items-center">
                     <button onClick={closeModal} className="text-2xl text-white">X</button>
                 </div>
-                {/* SwiperJS Galereya */}
                 <div className="mt-8">
                     {images.length > 0 && (
                         <Swiper spaceBetween={10} slidesPerView={1}>
@@ -88,7 +87,7 @@ const AboutMe = () => {
                         </Swiper>
                     )}
                 </div>
-            </Modal>
+            </Modal> */}
         </section>
     );
 };

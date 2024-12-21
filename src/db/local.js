@@ -22,9 +22,9 @@ const portfolioData = {
         eng: 'Age',
       },
       value: {
-        uz: '25',
-        ru: '25',
-        eng: '25',
+        uz: '20',
+        ru: '20',
+        eng: '20',
       },
     },
     {
@@ -35,7 +35,7 @@ const portfolioData = {
         eng: 'Profession',
       },
       value: {
-        uz: 'Web Dasturchi',
+        uz: 'Full Stack Web Dasturchi',
         ru: 'Веб-разработчик',
         eng: 'Web Developer',
       },
@@ -48,9 +48,9 @@ const portfolioData = {
         eng: 'Total Experience',
       },
       value: {
-        uz: '5 yil',
-        ru: '5 лет',
-        eng: '5 years',
+        uz: '1 yil',
+        ru: '1 год',
+        eng: '1 year',
       },
     },
     {
@@ -61,9 +61,9 @@ const portfolioData = {
         eng: 'Goal',
       },
       value: {
-        uz: 'Zamonaviy texnologiyalar asosida samarali veb ilovalar yaratish.',
-        ru: 'Создание эффективных веб-приложений на основе современных технологий.',
-        eng: 'Creating efficient web applications based on modern technologies.',
+        uz: "Web dasturlash sohasida kuchli mutaxassis bo'lish va zamonaviy web dasturlar yaratish",
+        ru: 'Стать сильным специалистом в области веб-разработки и создавать современные веб-приложения',
+        eng: 'To become a strong specialist in web development and create modern web applications',
       },
     },
     {
@@ -74,9 +74,9 @@ const portfolioData = {
         eng: 'Education',
       },
       value: {
-        uz: 'TDTU, Kompyuter fanlari fakulteti',
-        ru: 'ТДТУ, Факультет компьютерных наук',
-        eng: 'TDTU, Faculty of Computer Science',
+        uz: "IT Park Sirdaryo, Najot Ta'lim Ganga",
+        ru: 'ИТ Парк Сирдарья, Найот Таълим Ганга',
+        eng: "IT Park Sirdarya, Najot Ta'lim Ganga",
       },
     },
     {
@@ -87,9 +87,9 @@ const portfolioData = {
         eng: 'Character',
       },
       value: {
-        uz: 'Javobgarlikni yaxshi his qilaman, jamoada ishlashga moyilman.',
-        ru: 'Я чувствую ответственность и склонен работать в команде.',
-        eng: 'I feel responsible and tend to work in a team.',
+        uz: "Javobgarlikni yaxshi his qilaman, vazifalarni vaqtida bajaraman, rahbarni uyaltirib qo'ymayman",
+        ru: 'Я хорошо чувствую ответственность, выполняю задачи вовремя, не подведу руководителя',
+        eng: 'I have a strong sense of responsibility, complete tasks on time, and never let the manager down',
       },
     },
     {
@@ -100,45 +100,65 @@ const portfolioData = {
         eng: 'Skills',
       },
       value: {
-        uz: 'JavaScript, React, Node.js, TailwindCSS, HTML, CSS',
-        ru: 'JavaScript, React, Node.js, TailwindCSS, HTML, CSS',
-        eng: 'JavaScript, React, Node.js, TailwindCSS, HTML, CSS',
+        uz: 'JavaScript, TypeScript, React, Node.js, TailwindCSS, HTML, CSS, MongoDb, Postgres SQL, Redux/Redux Toolkit',
+        ru: 'JavaScript, TypeScript, React, Node.js, TailwindCSS, HTML, CSS, MongoDb, Postgres SQL, Redux/Redux Toolkit',
+        eng: 'JavaScript, TypeScript, React, Node.js, TailwindCSS, HTML, CSS, MongoDb, Postgres SQL, Redux/Redux Toolkit',
       },
     },
-    {
-      key: 'images',
-      label: {
-        uz: 'Bu yerni bosing',
-        ru: 'Нажмите сюда',
-        eng: 'Click here',
-      },
-      imgs: [
-        '../../public/me2.png',
-        '../../public/me2.png',
-        '../../public/me2.png',
-      ],
-    },
+
+    // {
+    //   key: 'images',
+    //   label: {
+    //     uz: 'Bu yerni bosing',
+    //     ru: 'Нажмите сюда',
+    //     eng: 'Click here',
+    //   },
+    //   imgs: [
+    //     '../../public/me2.png',
+    //     '../../public/me2.png',
+    //     '../../public/me2.png',
+    //   ],
+    // },
   ],
   experience: [
     {
       company: {
-        uz: 'ABC MChJ',
-        ru: 'ООО АБЦ',
-        eng: 'ABC Ltd.',
+        uz: 'Hoca Inc',
+        ru: 'Хока Инк',
+        eng: 'Hoca Inc',
       },
       duration: {
-        uz: 'Yanvar 2021 - Dekabr 2022',
-        ru: 'Январь 2021 - Декабрь 2022',
-        eng: 'Jan 2021 - Dec 2022',
+        uz: 'May 2023 - Dekabr 2023',
+        ru: 'Май 2023 - Декабрь 2023',
+        eng: 'May 2023 - December 2023',
       },
       position: {
-        uz: 'Veb Dasturchi',
-        ru: 'Веб-разработчик',
-        eng: 'Web Developer',
+        uz: 'Full Stack Strong Junyor Dasturchi',
+        ru: 'Full Stack Strong Junior Разработчик',
+        eng: 'Full Stack Strong Junior Developer',
       },
-      link: 'https://abc.com',
+      link: 'https://glints.com/vn/en/companies/hoca-inc/14a8a216-0eaa-4232-99a6-71851cc3de05',
+    },
+    {
+      company: {
+        uz: 'CodeCrafters',
+        ru: 'КодКрафтерс',
+        eng: 'CodeCrafters',
+      },
+      duration: {
+        uz: 'Iyun 2022 - Noyabr 2022',
+        ru: 'Июнь 2022 - Ноябрь 2022',
+        eng: 'June 2022 - November 2022',
+      },
+      position: {
+        uz: 'Strong Junyor',
+        ru: 'Сильный Джуниор',
+        eng: 'Strong Junior',
+      },
+      link: 'https://codecrafters.io/',
     },
   ],
+
   projects: [
     {
       id: 1,

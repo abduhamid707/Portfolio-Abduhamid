@@ -24,6 +24,7 @@
 
    .overflow-x-auto {
     background: none; /* Backgroundni olib tashlash */
+    /* color: rgba(0, 12, 149, 0.429); */
   }
   .projects select option{
     background-color: transparent !important;
