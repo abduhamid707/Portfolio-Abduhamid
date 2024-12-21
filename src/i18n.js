@@ -1,8 +1,6 @@
 // src/i18n.js
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import portfolioData from './db/local.js'
-// Til sozlamalari
 const resources = {
   uz: {
     translation: {
@@ -19,13 +17,20 @@ const resources = {
       projects: 'Loyihalar',
       contact: 'Aloqa',
       feedback: 'Fikrlaringizni ulashing',
-      copyright: '© 2024 Abduhamid Botirov. Barcha huquqlar himoyalangan.',
+      copyright: 'Abduhamid Botirov. Barcha huquqlar himoyalangan.',
       allCats: 'Hamma Kategoriyalar',
       allTechs: 'Hamma Texnologiyalar',
-      technolog: "Texnalogiyalar",
-    
+      technolog: 'Texnalogiyalar',
+      heading: "Fikrlaringizni Biz Bilan Bo'lishing",
+      name: 'Ism',
+      email: 'Elektron pochta',
+      feedbackText: 'Fikrlaringiz',
+      placeholderName: 'Ismingizni kiriting',
+      placeholderEmail: 'Elektron pochtangizni kiriting',
+      placeholderFeedback: 'Fikrlaringizni kiriting',
+      buttonSubmit: 'Fikrni yuborish',
+      buttonSubmitting: 'Yuborilmoqda...',
     },
-    datas: portfolioData,
   },
   ru: {
     translation: {
@@ -42,12 +47,20 @@ const resources = {
       projects: 'Проекты',
       contact: 'Контакт',
       feedback: 'Поделитесь своими мыслями',
-      copyright: '© 2024 Абдухамид Ботиров. Все права защищены.',
+      copyright: 'Абдухамид Ботиров. Все права защищены.',
       allCats: 'Все категории',
       allTechs: 'Все технологии',
-      technolog:"Технологии",
+      technolog: 'Технологии',
+      heading: 'Поделитесь своими мыслями',
+      name: 'Имя',
+      email: 'Электронная почта',
+      feedbackText: 'Ваши отзывы',
+      placeholderName: 'Введите ваше имя',
+      placeholderEmail: 'Введите вашу почту',
+      placeholderFeedback: 'Введите ваше мнение',
+      buttonSubmit: 'Отправить отзыв',
+      buttonSubmitting: 'Отправляется...',
     },
-    datas: portfolioData,
   },
   eng: {
     translation: {
@@ -64,13 +77,20 @@ const resources = {
       projects: 'Projects',
       contact: 'Contact',
       feedback: 'Share Your Thoughts',
-      copyright: '© 2024 Abduhamid Botirov. All rights reserved.',
+      copyright: ' Abduhamid Botirov. All rights reserved.',
       allCats: 'All Categories',
       allTechs: 'All Technologies',
-      technolog:"Technologies",
-
+      technolog: 'Technologies',
+      heading: 'Share Your Thoughts',
+      name: 'Name',
+      email: 'Email',
+      feedbackText: 'Your Feedback',
+      placeholderName: 'Enter your name',
+      placeholderEmail: 'Enter your email',
+      placeholderFeedback: 'Enter your thoughts',
+      buttonSubmit: 'Submit Feedback',
+      buttonSubmitting: 'Submitting...',
     },
-    datas: portfolioData,
   },
 }
 
