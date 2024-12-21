@@ -1,9 +1,12 @@
+import { useTranslation } from 'react-i18next';
 import portfolioData from '../db/local.js';
 const Contact = () => {
+      const { t, i18n } = useTranslation();
+  
   return (
     <section className="contact mt-20"> {/* Yuqoridan 100px pastga tushish */}
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl sm:text-3xl font-bold text-accent mb-5 text-left">Contact</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-accent mb-5 text-left">{t("contact") }</h2>
         <div className="overflow-x-auto"> {/* Kichik ekranlarda skroll uchun */}
           <table className="table-auto w-full shadow-md rounded-md">
             <tbody>

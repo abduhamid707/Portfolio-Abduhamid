@@ -291,7 +291,7 @@ const Projects = () => {
                                     </span>
                                 </p>
                                 <p className="text-sm text-light mb-2 text-left">
-                                    <strong>Technologies:</strong> {item.techs.join(', ')}
+                                    <strong>{t("technolog")}:</strong> {item.techs.join(', ')}
                                 </p>
                                 <div className="flex gap-4 mt-4 flex justify-between items-center">
                                     <a

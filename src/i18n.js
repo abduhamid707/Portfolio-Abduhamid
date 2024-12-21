@@ -22,6 +22,8 @@ const resources = {
       copyright: '© 2024 Abduhamid Botirov. Barcha huquqlar himoyalangan.',
       allCats: 'Hamma Kategoriyalar',
       allTechs: 'Hamma Texnologiyalar',
+      technolog: "Texnalogiyalar",
+    
     },
     datas: portfolioData,
   },
@@ -43,6 +45,7 @@ const resources = {
       copyright: '© 2024 Абдухамид Ботиров. Все права защищены.',
       allCats: 'Все категории',
       allTechs: 'Все технологии',
+      technolog:"Технологии",
     },
     datas: portfolioData,
   },
@@ -64,6 +67,8 @@ const resources = {
       copyright: '© 2024 Abduhamid Botirov. All rights reserved.',
       allCats: 'All Categories',
       allTechs: 'All Technologies',
+      technolog:"Technologies",
+
     },
     datas: portfolioData,
   },

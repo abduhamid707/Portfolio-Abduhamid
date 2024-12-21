@@ -9,8 +9,9 @@ const Home = () => {
       <AboutMe />
       <Experience />
       <Projects />
-      {/* 
       <Contact />
+      {/* 
+      
       <FedBack/> */}
     </>
   );
