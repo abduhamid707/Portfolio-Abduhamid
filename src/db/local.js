@@ -74,120 +74,53 @@ const portfolioData = {
   projects: [
     {
       id: 1,
-      title: 'Project One',
+      title: 'ShopingUz',
       description:
         'This is a brief description of Project One. It includes information on what was achieved in the project.',
-      category: 'Web Development',
+      category: 'ecommercy',
+      techs: ['Node Js', 'ReactJs', 'Html/Css'],
+      githubLink: 'https://github.com/username/project-one', // GitHub havolasi
+      liveDemo: 'https://projectone.live', // Loyihaning faol sahifasi
     },
     {
       id: 2,
-      title: 'Project Two',
+      title: 'FoodieHub',
       description:
-        'This project is about creating a fully responsive and modern portfolio website.',
-      category: 'UI/UX Design',
+        'FoodieHub is a platform for food lovers where users can share recipes, review dishes, and discover new restaurants.',
+      category: 'food',
+      techs: ['Angular', 'Node Js', 'MongoDB'],
+      githubLink: 'https://github.com/username/foodiehub',
+      liveDemo: 'https://foodiehub.live',
     },
     {
       id: 3,
-      title: 'Project Three',
-      description: 'This project showcases a mobile app built using Flutter.',
-      category: 'Mobile Development',
+      title: 'FitTrack',
+      description:
+        'FitTrack is a fitness app designed to help users track their workouts, set goals, and monitor their progress.',
+      category: 'fitness',
+      techs: ['React Native', 'Firebase', 'Express'],
+      githubLink: 'https://github.com/username/fittrack',
+      liveDemo: 'https://fittrack.live',
     },
     {
       id: 4,
-      title: 'Project Four',
+      title: 'TaskMaster',
       description:
-        'An innovative project focusing on backend architecture using Node.js.',
-      category: 'Backend Development',
+        'TaskMaster is a productivity app that allows users to organize their tasks, set deadlines, and track their productivity.',
+      category: 'productivity',
+      techs: ['VueJs', 'Vuetify', 'Node Js'],
+      githubLink: 'https://github.com/username/taskmaster',
+      liveDemo: 'https://taskmaster.live',
     },
     {
       id: 5,
-      title: 'Project Five',
-      description: 'A comprehensive data visualization project using D3.js.',
-      category: 'Data Visualization',
-    },
-    {
-      id: 6,
-      title: 'Project Six',
-      description: 'A machine learning project that predicts user behavior.',
-      category: 'Machine Learning',
-    },
-    {
-      id: 1,
-      title: 'Project One',
+      title: 'TravelPal',
       description:
-        'This is a brief description of Project One. It includes information on what was achieved in the project.',
-      category: 'Web Development',
-    },
-    {
-      id: 2,
-      title: 'Project Two',
-      description:
-        'This project is about creating a fully responsive and modern portfolio website.',
-      category: 'UI/UX Design',
-    },
-    {
-      id: 3,
-      title: 'Project Three',
-      description: 'This project showcases a mobile app built using Flutter.',
-      category: 'Mobile Development',
-    },
-    {
-      id: 4,
-      title: 'Project Four',
-      description:
-        'An innovative project focusing on backend architecture using Node.js.',
-      category: 'Backend Development',
-    },
-    {
-      id: 5,
-      title: 'Project Five',
-      description: 'A comprehensive data visualization project using D3.js.',
-      category: 'Data Visualization',
-    },
-    {
-      id: 6,
-      title: 'Project Six',
-      description: 'A machine learning project that predicts user behavior.',
-      category: 'Machine Learning',
-    },
-    {
-      id: 1,
-      title: 'Project One',
-      description:
-        'This is a brief description of Project One. It includes information on what was achieved in the project.',
-      category: 'Web Development',
-    },
-    {
-      id: 2,
-      title: 'Project Two',
-      description:
-        'This project is about creating a fully responsive and modern portfolio website.',
-      category: 'UI/UX Design',
-    },
-    {
-      id: 3,
-      title: 'Project Three',
-      description: 'This project showcases a mobile app built using Flutter.',
-      category: 'Mobile Development',
-    },
-    {
-      id: 4,
-      title: 'Project Four',
-      description:
-        'An innovative project focusing on backend architecture using Node.js.',
-      category: 'Backend Development',
-    },
-    {
-      id: 5,
-      title: 'Project Five',
-      description: 'A comprehensive data visualization project using D3.js.',
-      category: 'Data Visualization',
-    },
-    {
-      id: 6,
-      title: 'Project Six',
-      description: 'A machine learning project that predicts user behavior.',
-      category: 'Machine Learning',
+        'TravelPal is a travel planning app that helps users discover travel destinations, create itineraries, and share experiences.',
+      category: 'travel',
+      techs: ['ReactJs', 'Node Js', 'MongoDB'],
+      githubLink: 'https://github.com/username/travelpal',
+      liveDemo: 'https://travelpal.live',
     },
   ],
   contact: {

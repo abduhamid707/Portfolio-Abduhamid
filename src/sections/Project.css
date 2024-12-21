@@ -25,4 +25,6 @@
    .overflow-x-auto {
     background: none; /* Backgroundni olib tashlash */
   }
-  
+  .projects select option{
+    background-color: transparent !important;
+  }
