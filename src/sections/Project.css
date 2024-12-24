@@ -29,3 +29,21 @@
   .projects select option{
     background-color: transparent !important;
   }
+  /* Select uchun arrow ni o'zgartirish */
+.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent !important;
+  border: 1px solid white;
+  color: white;
+  padding-right: 25px; /* Arrow uchun joy ajratish */
+}
+
+.custom-select::after {
+  content: '▼'; /* Yoki kerakli simvol */
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  pointer-events: none; /* Arrowni ishlamaydigan qilib qilish */
+}

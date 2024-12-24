@@ -1,0 +1,9 @@
+/* custom.css */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* html {
+    scrollbar-width: none;
+  }
+   */

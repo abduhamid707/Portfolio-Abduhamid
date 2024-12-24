@@ -1,0 +1,14 @@
+.swiper-button-prev{
+    color: rgb(0 255 153 / var(--tw-text-opacity, 1)) !important;
+}
+.swiper-button-next{
+    color: rgb(0 255 153 / var(--tw-text-opacity, 1)) !important;
+}
+.swiper-pagination-bullet{
+    color: rgb(0 255 153 / var(--tw-text-opacity, 0.2)) !important;
+
+}
+ .swiper-pagination-bullet-active{
+    background: rgb(0 255 153 / var(--tw-text-opacity, 1)) !important;
+
+}

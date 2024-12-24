@@ -1,6 +1,7 @@
 // src/i18n.js
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
+
 const resources = {
   uz: {
     translation: {
@@ -8,6 +9,7 @@ const resources = {
       thAboutMeData: 'Malumot',
       thAboutMeInfo: 'Tasnif',
       aboutMe: 'Mening haqimda',
+      aboutMeMore: "Men haqimda ko'proq",
       experience: 'Tajribalarim',
       experienceTableHrComp: 'Kompaniya',
       experienceTableHrDate: 'Muddati',
@@ -38,6 +40,7 @@ const resources = {
       thAboutMeData: 'Информация',
       thAboutMeInfo: 'Классификация',
       aboutMe: 'Обо мне',
+      aboutMeMore: 'Подробнее обо мне',
       experience: 'Мой опыт',
       experienceTableHrComp: 'Компания',
       experienceTableHrDate: 'Срок',
@@ -68,6 +71,7 @@ const resources = {
       thAboutMeData: 'Information',
       thAboutMeInfo: 'Classification',
       aboutMe: 'About Me',
+      aboutMeMore: 'More about me',
       experience: 'My Experience',
       experienceTableHrComp: 'Company',
       experienceTableHrDate: 'Duration',

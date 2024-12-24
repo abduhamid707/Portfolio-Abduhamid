@@ -5,6 +5,7 @@ import Header from './Layouts/Header';
 import Home from './pages/Home';
 import DetailedProject from './sections/DetailedProject';
 import { useEffect } from 'react';
+import ContactButton from './Components/ContactButton';
 
 function App() {
   useEffect(() => {
@@ -86,7 +87,7 @@ function App() {
     <>
       {/* Particles.js konteynerini yaratish */}
       <div id="particles-js" style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}></div>
-
+      <ContactButton />
       {/* Header va sahifalar */}
       <Header />
       <Routes>

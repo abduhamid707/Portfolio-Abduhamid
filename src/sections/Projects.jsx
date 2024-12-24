@@ -241,13 +241,13 @@ const Projects = () => {
                     <select
                         value={categoryFilter}
                         onChange={handleCategoryChange}
-                        className="font-bold text-white bg-transparent border border-white rounded-md px-2 py-1 appearance-none"
+                        className="font-bold text-white bg-transparent border border-white rounded-md px-2 py-1 custom-select focus:outline-none"
                     >
-                        <option value="" className="text-accent bg-primary">
+                        <option value="" className="text-accent bg-transparent">
                             {t("allCats")}
                         </option>
                         {categories.map((category, index) => (
-                            <option key={index} value={category} className="text-accent bg-primary">
+                            <option key={index} value={category} className="text-accent bg-transparent">
                                 {category}
                             </option>
                         ))}
@@ -257,16 +257,17 @@ const Projects = () => {
                     <select
                         value={techFilter}
                         onChange={handleTechChange}
-                        className="font-bold text-white bg-transparent border border-white rounded-md px-2 py-1 appearance-none"
+                        className="font-bold text-white bg-transparent border border-white rounded-md px-2 py-1 custom-select focus:outline-none"
                     >
-                        <option value="" className="text-accent">{t("allTechs")}</option>
+                        <option value="" className="text-accent bg-transparent">{t("allTechs")}</option>
                         {techs.map((tech, index) => (
-                            <option key={index} value={tech} className="text-accent">
+                            <option key={index} value={tech} className="text-accent bg-transparent">
                                 {tech}
                             </option>
                         ))}
                     </select>
                 </div>
+
 
                 {/* Project Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

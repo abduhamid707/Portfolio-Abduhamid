@@ -1,26 +1,23 @@
+
+
 import { useState } from 'react';
 import Modal from 'react-modal';
 import portfolioData from '../db/local.js';
+import "./aboutme.css"
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useTranslation } from 'react-i18next';
-
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 Modal.setAppElement('#root');
 
 const AboutMe = () => {
     const { t, i18n } = useTranslation();
-
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [images, setImages] = useState([]);
-
+    let myData = portfolioData.aboutMeMore;
     const openModal = (image) => {
         setIsModalOpen(true);
         setImages([image]);
-    };
-
-    const closeModal = () => {
-        setIsModalOpen(false);
-        setImages([]);
     };
 
     return (
@@ -34,62 +31,65 @@ const AboutMe = () => {
                         <thead>
                             <tr>
                                 <th className="px-4 py-2 text-left border border-accent">{t('thAboutMeData')}</th>
-                                <th className="px-4 py-2 text-left border border-accent">{t('thAboutMeInfo')}</th>
+                                <th className="px-4 py-2 text-left border border-accent text-gray-100">{t('thAboutMeInfo')}</th>
                             </tr>
                         </thead>
                         <tbody>
                             {portfolioData.aboutme.map((item) => {
-                                if (item.key === 'images') {
-                                    return (
-                                        <tr key={item.key} className="border-t border-accent">
-                                            <th className="px-4 py-2 border border-accent">{t(item.label?.[i18n.language])}</th>
-                                            <td className="px-4 py-2 border border-accent cursor-pointer" onClick={() => openModal(item.imgs[0])}>
-                                                {t(item.label?.[i18n.language])}
-                                            </td>
-                                        </tr>
-                                    );
-                                } else {
-                                    return (
-                                        <tr key={item.key} className="border-t border-accent">
-                                            <th className="px-4 py-2 border border-accent">{t(item.label?.[i18n.language])}</th>
-                                            <td className="px-4 py-2 border border-accent">{t(item.value?.[i18n.language])}</td>
-                                        </tr>
-                                    );
-                                }
+                                return (
+                                    <tr key={item.key} className="border-t border-accent">
+                                        <th className="px-4 py-2 border border-accent  ">{t(item.label?.[i18n.language])}</th>
+                                        <td className="px-4 py-2 border border-accent text-gray-100">{t(item.value?.[i18n.language])}</td>
+                                    </tr>
+                                );
                             })}
                         </tbody>
                     </table>
                 </div>
             </div>
-
-            {/* Modal uchun image gallery */}
-            {/* <Modal
-                isOpen={isModalOpen}
-                onRequestClose={closeModal}
-                className="modal-content p-4 rounded-lg shadow-lg w-full sm:w-96 mx-auto"
-                overlayClassName="modal-overlay fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center"
-            >
-                <div className="flex justify-between items-center">
-                    <button onClick={closeModal} className="text-2xl text-white">X</button>
-                </div>
-                <div className="mt-8">
-                    {images.length > 0 && (
-                        <Swiper spaceBetween={10} slidesPerView={1}>
-                            {images.map((image, index) => (
-                                <SwiperSlide key={index}>
+            <div className="container mt-24">
+                <h2 className="text-2xl sm:text-3xl font-bold text-accent mb-5 text-left">
+                    {t('aboutMeMore')}
+                </h2>
+                <Swiper
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    autoplay={{
+                        delay: 8000,
+                        disableOnInteraction: false,
+                    }}
+                    pagination={{
+                        clickable: true,
+                        renderBullet: (index, className) => `<span class='${className} text-accent'></span>`,
+                    }}
+                    navigation
+                    modules={[Autoplay, Pagination, Navigation]}
+                    className="w-full"
+                >
+                    {myData.map((item) => (
+                        <SwiperSlide key={item.id}>
+                            <div className="flex flex-col md:flex-row items-center justify-center text-center md:text-left p-6  rounded-lg shadow-lg w-full gap-4">
+                                <div className='text-center w-[100%] flex justify-center'>
                                     <img
-                                        src={image}
-                                        alt={`Image ${index + 1}`}
-                                        className="w-full h-96 object-cover rounded-md"
+                                        src={item.img}
+                                        alt={item.title}
+                                        className="w-60 h-100 object-cover rounded-full mb-4 md:mb-0"
                                     />
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    )}
-                </div>
-            </Modal> */}
+                                </div>
+                                <div className='text-center  w-[100%]'>
+                                    <h3 className=" font-semibold text-accent mb-2 text-center text-2xl">{t(item.title?.[i18n.language])}</h3>
+                                    <p className="text-gray-100 text-lg text-center">{t(item.desc?.[i18n.language])}</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+
+            </div>
         </section>
     );
 };
 
 export default AboutMe;
+
+
