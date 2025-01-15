@@ -6,12 +6,12 @@
 }
 /* .saxsaxsaxsa .card{
     width: 800px;
-} */ 
+} */
 
 /* .sasxaxsa{
     position: fixed;
 } */
- /* Tailwind config orqali qo'shishingiz mumkin */
+/* Tailwind config orqali qo'shishingiz mumkin */
 /* .scrollbar-none::-webkit-scrollbar {
     display: none;
   }
@@ -22,22 +22,16 @@
   }
    */
 
-   .overflow-x-auto {
-    background: none; /* Backgroundni olib tashlash */
-    /* color: rgba(0, 12, 149, 0.429); */
-  }
-  .projects select option{
-    background-color: transparent !important;
-  }
-  /* Select uchun arrow ni o'zgartirish */
+.overflow-x-auto {
+  background: none; /* Backgroundni olib tashlash */
+  /* color: rgba(0, 12, 149, 0.429); */
+}
+.projects select option {
+  background-color: transparent !important;
+}
+/* Select uchun arrow ni o'zgartirish */
 .custom-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: transparent !important;
-  border: 1px solid white;
-  color: white;
-  padding-right: 25px; /* Arrow uchun joy ajratish */
+  /* background:  rgb(0, 0, 0) !important; */
 }
 
 .custom-select::after {
@@ -46,4 +40,49 @@
   right: 10px;
   top: 10px;
   pointer-events: none; /* Arrowni ishlamaydigan qilib qilish */
+}
+/* Modalni boshqarish */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  /* background-color: white; */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background: white;
+  border-radius: 50%;
+  color: rgb(1, 255, 64);
+  cursor: pointer;
+  z-index: 1000;
 }

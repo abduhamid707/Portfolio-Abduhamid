@@ -1,12 +1,18 @@
 import myImg from '../../public/jiddiyNoBg.png'
+import img1 from '../Images/1.png'
+import img2 from '../Images/2.png'
+import img3 from '../Images/3.png'
+import img4 from '../Images/4.png'
+import img5 from '../Images/5.png'
+import img6 from '../Images/6.png'
+import img7 from '../Images/7.png'
 const portfolioData = {
-  chatGpt: 
-     {
-        uz: "Tezkor va kerakli ma'lumotlarni olish uchun so'rov yuboring. ",
-        ru: 'Отправьте запрос для получения быстрых и нужных данных. ',
-        eng: "Send a request to get quick and necessary information.",
-      },
-    
+  chatGpt: {
+    uz: "Tezkor va kerakli ma'lumotlarni olish uchun so'rov yuboring. ",
+    ru: 'Отправьте запрос для получения быстрых и нужных данных. ',
+    eng: 'Send a request to get quick and necessary information.',
+  },
+
   aboutMeMore: [
     {
       id: 1,
@@ -226,48 +232,32 @@ const portfolioData = {
 
   projects: [
     {
-      id: 1,
       title: {
-        uz: 'ShopingUz',
-        ru: 'ShopingUz',
-        eng: 'ShopingUz',
+        uz: 'Cheksizlik va Undan Nariga',
+        ru: 'Infinity & Beyond',
+        eng: 'Infinity & Beyond',
       },
       description: {
-        uz: "Bu loyiha haqida qisqacha ma'lumot. Loyihadagi erishilgan natijalar.",
-        ru: 'Краткое описание проекта. Что было достигнуто в проекте.',
-        eng: 'This is a brief description of the project. It includes information on what was achieved in the project.',
+        uz: '"Infinity & Beyond" platformasi sizni koinotning cheksiz sirlarini kashf qilishga chorlaydi. Har qanday qurilmada ishlash imkoniyati bilan bu xizmat qulay va sifatli tajriba taqdim etadi. Turli obuna rejalari orqali siz o\'zingizga mos variantni tanlab, eksklyuziv kontentdan bahramand bo\'lishingiz mumkin.',
+        ru: '"Infinity & Beyond" приглашает вас исследовать бесконечные тайны Вселенной. Эта платформа обеспечивает удобный и качественный опыт на любом устройстве. Вы можете выбрать подходящий тарифный план и наслаждаться эксклюзивным контентом.',
+        eng: '"Infinity & Beyond" invites you to explore the endless mysteries of the universe. This platform offers a seamless and high-quality experience on any device. You can choose a subscription plan that suits you and enjoy exclusive content.',
       },
-      category: 'e-commerce',
-      techs: ['Node Js', 'ReactJs', 'Html/Css'],
-      githubLink: 'https://github.com/username/project-one',
-      liveDemo: 'https://projectone.live',
-    },
-    {
-      id: 3,
-      title: {
-        uz: 'ShopingUz2',
-        ru: 'ShopingUz22',
-        eng: 'ShopingUz22',
-      },
-      description: {
-        uz: "Bu loyiha haqida qisqacha ma'lumot. Loyihadagi erishilgan natijalar.",
-        ru: 'Краткое описание проекта. Что было достигнуто в проекте.',
-        eng: 'This is a brief description of the project. It includes information on what was achieved in the project.',
-      },
-      category: 'traveling',
-      techs: ['Node Js', 'Typescript', 'Html/Css'],
-      githubLink: 'https://github.com/username/project-one',
-      liveDemo: 'https://projectone.live',
+      _id: '6787d3fb5f4333c7e61944b7',
+      category: 'Astronomy',
+      techs: ['xsaxsa', 'xsaxsa', 'saxxsa', 'sxacsacdcsd'],
+      imgLinks: [img1, img2, img3, img4, img5, img6, img7],
+      githubLink: 'https://github.com/abduhamidweb/CosmosSpace',
+      liveDemo: 'https://cosmosdev.netlify.app/',
+      __v: 0,
     },
   ],
   contact: {
     phone: '+998997867075',
     email: 'abduhamidbotirovwork@gmail.com',
     linkedin: 'https://www.linkedin.com/in/abduhamiddev/',
-    instagram: 'https://www.instagram.com/abduhamid_botirov_/',
+    instagram: 'https://www.instagram.com/abduhamid.botirov',
     telegram: 'https://t.me/AbduhamidBotirov',
     telegramBlog: 'https://t.me/shaxsiy_bosqich',
   },
 }
-
 export default portfolioData
