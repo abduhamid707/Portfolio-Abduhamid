@@ -9,6 +9,21 @@ import img7 from '../Images/7.png'
 import img8 from '../Images/res1.png'
 import img9 from '../Images/res2.png'
 import img10 from '../Images/res3.png'
+import img11 from '../Images/8.png'
+import img12 from '../Images/9.png'
+import img133 from '../Images/10.png'
+import img13 from '../Images/13.png'
+import img14 from '../Images/14.png'
+import img15 from '../Images/15.png'
+import img16 from '../Images/16.png'
+import img17 from '../Images/17.png'
+import img18 from '../Images/18.png'
+import img19 from '../Images/19.png'
+import img20 from '../Images/20.png'
+import img21 from '../Images/21.png'
+import img22 from '../Images/22.png'
+
+
 const portfolioData = {
   chatGpt: {
     uz: "Tezkor va kerakli ma'lumotlarni olish uchun so'rov yuboring. ",
@@ -272,7 +287,89 @@ const portfolioData = {
       liveDemo: 'https://leafy-biscuit-c5029c.netlify.app/',
       __v: 0,
     },
+    {
+      title: {
+        uz: 'Mamlakatlar Maʼlumotlari',
+        ru: 'Информация о странах',
+        eng: 'Country Information',
+      },
+      description: {
+        uz: 'Dunyo mamlakatlari haqida batafsil maʼlumot olish uchun platforma.',
+        ru: 'Платформа для получения подробной информации о странах мира.',
+        eng: 'A platform for detailed information about countries worldwide.',
+      },
+      _id: '4',
+      category: 'Web Application',
+      techs: ['React', 'JavaScript', 'CSS', 'HTML'],
+      imgLinks: [img11, img12, img133],
+      githubLink: 'https://github.com/abduhamidweb/Countr-ReactJs',
+      liveDemo: 'https://verdant-lollipop-bcb0bb.netlify.app/',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'Restoran Menejment Platformasi',
+        ru: 'Платформа управления рестораном',
+        eng: 'Restaurant Management Platform',
+      },
+      description: {
+        uz: "Restoran buyurtmalarini boshqarish, menyuni sozlash va moliyaviy hisobotlarni ko'rish uchun platforma.",
+        ru: 'Платформа для управления заказами ресторана, настройки меню и просмотра финансовых отчетов.',
+        eng: 'A platform for managing restaurant orders, customizing the menu, and viewing financial reports.',
+      },
+      _id: '2',
+      category: 'Web Application',
+      techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
+      imgLinks: [img13, img14, img15],
+      githubLink: 'https://github.com/abduhamidweb/Extra',
+      liveDemo: 'https://leafy-biscuit-c5029c.netlify.app/',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'Professional xizmat',
+        ru: 'Профессиональный сервис',
+        eng: 'Professional service',
+      },
+      description: {
+        uz: "Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan echimlarni yaratamiz.",
+        ru: 'Мы заботимся о каждом клиенте и создаем решения, отвечающие их потребностям.',
+        eng: 'We care about each client and create solutions that meet their needs.',
+      },
+      _id: '3',
+      category: 'professional',
+      techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
+      imgLinks: [img16, img17, img18],
+      githubLink: 'https://quiet-concha-ee2e99.netlify.app/',
+      liveDemo: 'https://quiet-concha-ee2e99.netlify.app/',
+      __v: 0,
+    },
 
+    {
+      title: {
+        uz: 'World Words',
+        ru: 'Мир слов',
+        eng: 'World Words',
+      },
+      description: {
+        uz: 'Berilgan so\'zlarni toping va ingliz tili va lug\'at darajangizni oshiring.',
+        ru: 'Найдите данные слова и улучшите свой уровень английского языка и словарный запас.',
+        eng: 'Find the given words and improve your English and vocabulary skills.',
+      },
+      _id: '7',
+      category: 'play',
+      techs: ['Javascript', 'HTML', 'CSS'],
+      imgLinks: [
+        img19,
+        img20,
+        img21,
+        img22
+      ],
+      githubLink: 'https://spiffy-platypus-cfd35d.netlify.app/index.html',
+      liveDemo: 'https://spiffy-platypus-cfd35d.netlify.app/index.html',
+      __v: 0,
+    }
+    
     // {
     //   title: {
     //     uz: '',
