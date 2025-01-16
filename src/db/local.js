@@ -6,6 +6,9 @@ import img4 from '../Images/4.png'
 import img5 from '../Images/5.png'
 import img6 from '../Images/6.png'
 import img7 from '../Images/7.png'
+import img8 from '../Images/res1.png'
+import img9 from '../Images/res2.png'
+import img10 from '../Images/res3.png'
 const portfolioData = {
   chatGpt: {
     uz: "Tezkor va kerakli ma'lumotlarni olish uchun so'rov yuboring. ",
@@ -244,12 +247,51 @@ const portfolioData = {
       },
       _id: '6787d3fb5f4333c7e61944b7',
       category: 'Astronomy',
-      techs: ['xsaxsa', 'xsaxsa', 'saxxsa', 'sxacsacdcsd'],
+      techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
       imgLinks: [img1, img2, img3, img4, img5, img6, img7],
       githubLink: 'https://github.com/abduhamidweb/CosmosSpace',
       liveDemo: 'https://cosmosdev.netlify.app/',
       __v: 0,
     },
+    {
+      title: {
+        uz: 'Restoran Menejment Platformasi',
+        ru: 'Платформа управления рестораном',
+        eng: 'Restaurant Management Platform',
+      },
+      description: {
+        uz: "Restoran buyurtmalarini boshqarish, menyuni sozlash va moliyaviy hisobotlarni ko'rish uchun platforma.",
+        ru: 'Платформа для управления заказами ресторана, настройки меню и просмотра финансовых отчетов.',
+        eng: 'A platform for managing restaurant orders, customizing the menu, and viewing financial reports.',
+      },
+      _id: '2',
+      category: 'Web Application',
+      techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
+      imgLinks: [img9, img8, img10],
+      githubLink: 'https://github.com/abduhamidweb/Extra',
+      liveDemo: 'https://leafy-biscuit-c5029c.netlify.app/',
+      __v: 0,
+    },
+
+    // {
+    //   title: {
+    //     uz: '',
+    //     ru: '',
+    //     eng: '',
+    //   },
+    //   description: {
+    //     uz: '',
+    //     ru: '',
+    //     eng: '',
+    //   },
+    //   _id: '',
+    //   category: '',
+    //   techs: [],
+    //   imgLinks: [],
+    //   githubLink: '',
+    //   liveDemo: '',
+    //   __v: 0,
+    // },
   ],
   contact: {
     phone: '+998997867075',
