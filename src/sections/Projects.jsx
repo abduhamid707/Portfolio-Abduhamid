@@ -142,19 +142,19 @@ const Projects = () => {
                                     >
                                         {item.level}
                                     </span>
-                                
+
                                 </div>
                                 <span
-                                        className={`absolute top-1 left-2 text-xs font-semibold px-2 py-1 rounded`}
-                                    >
-                                        #{item.category[1]}
+                                    className={`absolute top-1 left-2 text-xs font-semibold px-2 py-1 rounded`}
+                                >
+                                    #{item.category[1]}
 
-                                    </span>
+                                </span>
                                 <p className="text-sm text-light mb-2 text-left">
                                     {expandedProject === item.id
                                         ? t(item.description?.[i18n.language])
                                         : t(item.description?.[i18n.language]).substring(0, 80)}
-                                    
+
                                     <span
                                         className="text-gray-500 cursor-pointer"
                                         onClick={() => handleCardClick(item.id)}
