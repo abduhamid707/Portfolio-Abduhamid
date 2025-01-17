@@ -131,7 +131,7 @@ const Projects = () => {
                                     #{item.category[1]}
                                 </span>
                             </div>
-                            <div className="p-4 pt-3">
+                            <div className="p-4 pt-4">
 
                                 {/* Loyiha nomi va kategoriyasi */}
                                 <div className="flex justify-between items-center mb-2 mt-2 relative">
