@@ -23,7 +23,6 @@ import img20 from '../Images/20.png'
 import img21 from '../Images/21.png'
 import img22 from '../Images/22.png'
 
-
 const portfolioData = {
   chatGpt: {
     uz: "Tezkor va kerakli ma'lumotlarni olish uchun so'rov yuboring. ",
@@ -251,9 +250,9 @@ const portfolioData = {
   projects: [
     {
       title: {
-        uz: 'Cheksizlik va Undan Nariga',
-        ru: 'Infinity & Beyond',
-        eng: 'Infinity & Beyond',
+        uz: 'Cheksizlik Kosmosi',
+        ru: 'Бесконечный Космос',
+        eng: 'Infinity Cosmos',
       },
       description: {
         uz: '"Infinity & Beyond" platformasi sizni koinotning cheksiz sirlarini kashf qilishga chorlaydi. Har qanday qurilmada ishlash imkoniyati bilan bu xizmat qulay va sifatli tajriba taqdim etadi. Turli obuna rejalari orqali siz o\'zingizga mos variantni tanlab, eksklyuziv kontentdan bahramand bo\'lishingiz mumkin.',
@@ -261,7 +260,8 @@ const portfolioData = {
         eng: '"Infinity & Beyond" invites you to explore the endless mysteries of the universe. This platform offers a seamless and high-quality experience on any device. You can choose a subscription plan that suits you and enjoy exclusive content.',
       },
       _id: '6787d3fb5f4333c7e61944b7',
-      category: 'Astronomy',
+      category: ['Astronomy', 'Frontend'],
+      level: '#High',
       techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
       imgLinks: [img1, img2, img3, img4, img5, img6, img7],
       githubLink: 'https://github.com/abduhamidweb/CosmosSpace',
@@ -270,9 +270,9 @@ const portfolioData = {
     },
     {
       title: {
-        uz: 'Restoran Menejment Platformasi',
-        ru: 'Платформа управления рестораном',
-        eng: 'Restaurant Management Platform',
+        uz: 'Restoran Boshqaruv',
+        ru: 'Управление Рестораном',
+        eng: 'Restaurant Management',
       },
       description: {
         uz: "Restoran buyurtmalarini boshqarish, menyuni sozlash va moliyaviy hisobotlarni ko'rish uchun platforma.",
@@ -280,7 +280,8 @@ const portfolioData = {
         eng: 'A platform for managing restaurant orders, customizing the menu, and viewing financial reports.',
       },
       _id: '2',
-      category: 'Web Application',
+      category: ['Web Application', 'Frontend'],
+      level: '#Medium',
       techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
       imgLinks: [img9, img8, img10],
       githubLink: 'https://github.com/abduhamidweb/Extra',
@@ -291,7 +292,7 @@ const portfolioData = {
       title: {
         uz: 'Mamlakatlar Maʼlumotlari',
         ru: 'Информация о странах',
-        eng: 'Country Information',
+        eng: 'Country Info',
       },
       description: {
         uz: 'Dunyo mamlakatlari haqida batafsil maʼlumot olish uchun platforma.',
@@ -299,7 +300,8 @@ const portfolioData = {
         eng: 'A platform for detailed information about countries worldwide.',
       },
       _id: '4',
-      category: 'Web Application',
+      category: ['Web Application', 'Frontend'],
+      level: '#Low',
       techs: ['React', 'JavaScript', 'CSS', 'HTML'],
       imgLinks: [img11, img12, img133],
       githubLink: 'https://github.com/abduhamidweb/Countr-ReactJs',
@@ -308,9 +310,9 @@ const portfolioData = {
     },
     {
       title: {
-        uz: 'Restoran Menejment Platformasi',
-        ru: 'Платформа управления рестораном',
-        eng: 'Restaurant Management Platform',
+        uz: 'Restoran Platformasi',
+        ru: 'Платформа ресторана',
+        eng: 'Restaurant Platform',
       },
       description: {
         uz: "Restoran buyurtmalarini boshqarish, menyuni sozlash va moliyaviy hisobotlarni ko'rish uchun platforma.",
@@ -318,7 +320,8 @@ const portfolioData = {
         eng: 'A platform for managing restaurant orders, customizing the menu, and viewing financial reports.',
       },
       _id: '2',
-      category: 'Web Application',
+      category: ['Web Application', 'Frontend'],
+      level: '#High',
       techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
       imgLinks: [img13, img14, img15],
       githubLink: 'https://github.com/abduhamidweb/Extra',
@@ -327,9 +330,9 @@ const portfolioData = {
     },
     {
       title: {
-        uz: 'Professional xizmat',
+        uz: 'Professional Xizmat',
         ru: 'Профессиональный сервис',
-        eng: 'Professional service',
+        eng: 'Professional Service',
       },
       description: {
         uz: "Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan echimlarni yaratamiz.",
@@ -337,61 +340,37 @@ const portfolioData = {
         eng: 'We care about each client and create solutions that meet their needs.',
       },
       _id: '3',
-      category: 'professional',
+      category: ['Professional', 'Frontend'],
+      level: '#High',
       techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
       imgLinks: [img16, img17, img18],
       githubLink: 'https://quiet-concha-ee2e99.netlify.app/',
       liveDemo: 'https://quiet-concha-ee2e99.netlify.app/',
       __v: 0,
     },
-
     {
       title: {
-        uz: 'World Words',
+        uz: 'Soʼzlar Dunyosi',
         ru: 'Мир слов',
-        eng: 'World Words',
+        eng: 'Words World',
       },
       description: {
-        uz: 'Berilgan so\'zlarni toping va ingliz tili va lug\'at darajangizni oshiring.',
+        uz: "Berilgan so'zlarni toping va ingliz tili va lug'at darajangizni oshiring.",
         ru: 'Найдите данные слова и улучшите свой уровень английского языка и словарный запас.',
         eng: 'Find the given words and improve your English and vocabulary skills.',
       },
       _id: '7',
-      category: 'play',
-      techs: ['Javascript', 'HTML', 'CSS'],
-      imgLinks: [
-        img19,
-        img20,
-        img21,
-        img22
-      ],
+      category: ['Play', 'Frontend'],
+      level: '#Medium',
+      techs: ['JavaScript', 'HTML', 'CSS'],
+      imgLinks: [img19, img20, img21, img22],
       githubLink: 'https://spiffy-platypus-cfd35d.netlify.app/index.html',
       liveDemo: 'https://spiffy-platypus-cfd35d.netlify.app/index.html',
       __v: 0,
-    }
-    
-    // {
-    //   title: {
-    //     uz: '',
-    //     ru: '',
-    //     eng: '',
-    //   },
-    //   description: {
-    //     uz: '',
-    //     ru: '',
-    //     eng: '',
-    //   },
-    //   _id: '',
-    //   category: '',
-    //   techs: [],
-    //   imgLinks: [],
-    //   githubLink: '',
-    //   liveDemo: '',
-    //   __v: 0,
-    // },
-  ],
+    },
+  ],  
   contact: {
-    phone: '+998997867075',
+    phone: '+998887497075',
     email: 'abduhamidbotirovwork@gmail.com',
     linkedin: 'https://www.linkedin.com/in/abduhamiddev/',
     instagram: 'https://www.instagram.com/abduhamid.botirov',

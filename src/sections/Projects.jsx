@@ -115,30 +115,62 @@ const Projects = () => {
                 {/* Project Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {filteredProjects.map((item, index) => (
-                        <div key={index} className="w-full border border-accent rounded-lg shadow-lg overflow-hidden">
+                        <div key={index} className="relative   w-full border border-accent rounded-lg shadow-lg overflow-hidden">
+                            {/* Tasvir */}
+
                             <img
                                 src={item.imgLinks[0]}
                                 alt={item.title}
                                 className="w-full h-48 object-cover cursor-pointer"
-                                onClick={() => openModal(item.imgLinks)} // Bir nechta tasvirni tanlash
+                                onClick={() => openModal(item.imgLinks)} // Tasvirlarni modalda ochish
                             />
-                            <div className="p-4">
-                                <div className="flex justify-between items-center mb-2">
-                                    <h3 className="text-xl font-semibold text-accent">{t(item.title?.[i18n.language])}</h3>
-                                    <p className="text-sm text-gray-500">{item.category}</p>
+                            <div className="p-4 relative">
+                                {/* Loyiha nomi va kategoriyasi */}
+                                <div className="flex justify-between items-center mb-2 mt-2 relative">
+                                    <h3 className="text-lg font-semibold text-accent text-left">
+                                        {t(item.title?.[i18n.language])}
+                                        {/* {t(item.title?.[i18n.language]).split(' ')[0]} */}
+                                    </h3>
+
+                                    <span
+                                        className={`absolute top-1 right-2 text-xs font-semibold px-2 py-1 rounded  z-10${item.level === "#High"
+                                            ? "text-red-700 bg-red-700"
+                                            : item.level === "#Medium"
+                                                ? "text-yellow-700 bg-yellow-700"
+                                                : "text-green-700 bg-green-700"
+                                            }`}
+                                    >
+                                        {item.level}
+                                    </span>
+                                
                                 </div>
+                                <span
+                                        className={`absolute top-1 left-2 text-xs font-semibold px-2 py-1 rounded`}
+                                    >
+                                        #{item.category[1]}
+
+                                    </span>
                                 <p className="text-sm text-light mb-2 text-left">
                                     {expandedProject === item.id
                                         ? t(item.description?.[i18n.language])
                                         : t(item.description?.[i18n.language]).substring(0, 80)}
-                                    <span className='text-gray-500 cursor-pointer' onClick={() => handleCardClick(item.id)}>
+                                    
+                                    <span
+                                        className="text-gray-500 cursor-pointer"
+                                        onClick={() => handleCardClick(item.id)}
+                                    >
                                         {expandedProject === item.id ? " close" : "...more"}
                                     </span>
                                 </p>
-                                <p className="text-sm text-light mb-2 text-left">
-                                    <strong>{t("technolog")}:</strong> {item.techs.join(', ')}
+
+                                {/* Texnologiyalar */}
+                                <p className="text-sm  mt-3 mb-7 text-left">
+                                    {/* <strong className='text-gray-500'>{t("technolog")}:</strong> */}
+                                    {item.techs.join(", ")}
                                 </p>
-                                <div className="flex gap-4 mt-4 flex justify-between items-center">
+
+                                {/* GitHub va Live Demo */}
+                                <div className="flex mt-4 justify-between items-center absolute w-full bottom-3 gap-6">
                                     <a
                                         href={item.githubLink}
                                         target="_blank"
@@ -151,15 +183,17 @@ const Projects = () => {
                                         href={item.liveDemo}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-accent hover:text-accent-dark"
+                                        className="text-accent hover:text-accent-dark absolute right-10"
                                     >
                                         Live Demo
                                     </a>
                                 </div>
+
                             </div>
                         </div>
                     ))}
                 </div>
+
             </div>
 
             {/* Modal */}
