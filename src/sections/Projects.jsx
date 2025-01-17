@@ -124,7 +124,15 @@ const Projects = () => {
                                 className="w-full h-48 object-cover cursor-pointer"
                                 onClick={() => openModal(item.imgLinks)} // Tasvirlarni modalda ochish
                             />
-                            <div className="p-4 relative">
+                            <div className="relative">
+                                <span
+                                    className={`flex items-start text-xs font-semibold  rounded pl-4 top-1 absolute`}
+                                >
+                                    #{item.category[1]}
+                                </span>
+                            </div>
+                            <div className="p-4 pt-3">
+
                                 {/* Loyiha nomi va kategoriyasi */}
                                 <div className="flex justify-between items-center mb-2 mt-2 relative">
                                     <h3 className="text-lg font-semibold text-accent text-left">
@@ -144,12 +152,7 @@ const Projects = () => {
                                     </span>
 
                                 </div>
-                                <span
-                                    className={`absolute top-1 left-2 text-xs font-semibold px-2 py-1 rounded`}
-                                >
-                                    #{item.category[1]}
 
-                                </span>
                                 <p className="text-sm text-light mb-2 text-left">
                                     {expandedProject === item.id
                                         ? t(item.description?.[i18n.language])
