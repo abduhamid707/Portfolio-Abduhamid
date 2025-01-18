@@ -22,8 +22,379 @@ import img19 from '../Images/19.png'
 import img20 from '../Images/20.png'
 import img21 from '../Images/21.png'
 import img22 from '../Images/22.png'
-
+import img23 from '../Images/23.png'
+import img24 from '../Images/24.png'
+import img25 from '../Images/25.png'
+import img26 from '../Images/26.png'
+import img27 from '../Images/27.png'
+import img28 from '../Images/28.png'
+import img29 from '../Images/29.png'
+import img30 from '../Images/30.png'
+import img31 from '../Images/31.png'
+import img32 from '../Images/32.png'
+import img33 from '../Images/33.png'
+import img34 from '../Images/34.png'
+import img35 from '../Images/35.png'
+import img36 from '../Images/36.png'
+import img37 from '../Images/37.png'
+import backend from '../Images/backend.png'
+import full from '../Images/full3.png'
+import img38 from '../Images/38.png'
+import img39 from '../Images/39.png'
+import img40 from '../Images/40.png'
 const portfolioData = {
+  projects: [
+    {
+      title: {
+        uz: 'Ish Topish',
+        ru: 'Найти Работу',
+        eng: 'Job Apply',
+      },
+      description: {
+        uz: 'Ish qidiruvchilarning ish topishdagi qiyinchiliklarini yengillashtirish uchun yaratilgan. Ushbu loyiha ish qidiruvchilarga mos ishlarni topishda qo‘shimcha yordam beradi va jarayonni osonlashtiradi.',
+        ru: 'Создано для облегчения трудностей поиска работы для соискателей. Этот проект предоставляет дополнительную поддержку для соискателей, испытывающих трудности с поиском подходящей работы, и ускоряет процесс.',
+        eng: 'Created to alleviate the difficulties of job searching for job seekers. This project provides additional support to job seekers struggling to find suitable jobs and expedites the process.',
+      },
+      _id: '15',
+      category: ['Job Search', 'Full Stack', 'Backend'],
+      level: '#High',
+      techs: [
+        'Node.js',
+        'Express.js',
+        'MongoDB',
+        'Mongoose',
+        'JWT (JSON Web Token)',
+        'bcrypt.js',
+        'REST API',
+        'dotenv',
+        'Cors',
+        'Nodemailer',
+      ],
+      imgLinks: [full, img39, img40],
+      githubLink: 'https://github.com/abduhamidweb/job/tree/master/src',
+      liveDemo: 'https://hoca-thejobportal.netlify.app/',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'Startap Bazar',
+        ru: 'Рынок Стартапов',
+        eng: 'Startup Market',
+      },
+      description: {
+        uz: 'Foydalanuvchilarga o‘z startap loyihalarini sotish yoki ularga yoqqan startap loyihalarni sotib olish imkonini beradi. Ushbu loyiha innovatsion g‘oyalarni amalga oshirish va ularni manfaatdor tomonlar bilan bog‘lash uchun qulay platforma taqdim etadi.',
+        ru: 'Позволяет пользователям продавать свои стартапы или покупать понравившиеся проекты. Этот проект предоставляет удобную платформу для реализации инновационных идей и соединения заинтересованных сторон.',
+        eng: 'Enables users to sell their startup projects or purchase the ones they like. This project provides a seamless platform for realizing innovative ideas and connecting interested parties.',
+      },
+      _id: '16',
+      category: ['Marketplace', 'Full Stack'],
+      level: '#High',
+      techs: [
+        'React.js',
+        'Node.js',
+        'Express.js',
+        'MongoDB',
+        'Mongoose',
+        'Redux Toolkit',
+        'JWT (JSON Web Token)',
+        'bcrypt.js',
+        'REST API',
+        'Cloudinary',
+        'Material-UI',
+        'dotenv',
+        'Cors',
+        'Nodemailer',
+      ],
+      imgLinks: [full],
+      githubLink: 'https://github.com/abduhamidweb/startup',
+      liveDemo: 'https://github.com/Rasulwebs/startUp_MERN',
+      __v: 0,
+    },
+
+    {
+      title: {
+        uz: 'So‘zlarni angla',
+        ru: 'Поймите слова',
+        eng: 'Understand Words',
+      },
+      description: {
+        uz: "Ingliz tilidagi so'zlarni kontekst bilan o'rganing va ularni mustahkamlab, tilni bilish qobiliyatingizni oshiring.",
+        ru: 'Изучайте английские слова в контексте, закрепляйте их и улучшайте свои языковые навыки.',
+        eng: 'Learn English words with context, reinforce them, and improve your language proficiency.',
+      },
+      _id: '14',
+      category: ['Education', 'Frontend'],
+      level: '#Low',
+      techs: ['JavaScript'],
+      imgLinks: [img36],
+      githubLink: 'https://polite-douhua-6bc935.netlify.app/',
+      liveDemo: 'https://polite-douhua-6bc935.netlify.app/',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'Madaniy merosi',
+        ru: 'Культурное наследие',
+        eng: 'Cultural Heritage',
+      },
+      description: {
+        uz: "O'zbekistonning nomoddiy madaniy merosi haqida ma'lumot beruvchi sayt. Milliy madaniyatimizni yanada chuqurroq anglash uchun.",
+        ru: 'Сайт, предоставляющий информацию о нематериальном культурном наследии Узбекистана. Для более глубокого понимания нашей национальной культуры.',
+        eng: 'A website providing information about Uzbekistan’s intangible cultural heritage. Designed to deepen the understanding of our national culture.',
+      },
+      _id: '15',
+      category: ['Education', 'Frontend'],
+      level: '#Low',
+      techs: ['ReactJS', 'CSS'],
+      imgLinks: [img37, img38],
+      githubLink:
+        'https://678a8e50f0cfce00a621d0cf--silly-zabaione-029031.netlify.app/',
+      liveDemo:
+        'https://678a8e50f0cfce00a621d0cf--silly-zabaione-029031.netlify.app/',
+      __v: 0,
+    },
+
+    {
+      title: {
+        uz: 'Cheksizlik Kosmosi',
+        ru: 'Бесконечный Космос',
+        eng: 'Infinity Cosmos',
+      },
+      description: {
+        uz: '"Infinity & Beyond" platformasi sizni koinotning cheksiz sirlarini kashf qilishga chorlaydi. Har qanday qurilmada ishlash imkoniyati bilan bu xizmat qulay va sifatli tajriba taqdim etadi. Turli obuna rejalari orqali siz o\'zingizga mos variantni tanlab, eksklyuziv kontentdan bahramand bo\'lishingiz mumkin.',
+        ru: '"Infinity & Beyond" приглашает вас исследовать бесконечные тайны Вселенной. Эта платформа обеспечивает удобный и качественный опыт на любом устройстве. Вы можете выбрать подходящий тарифный план и наслаждаться эксклюзивным контентом.',
+        eng: '"Infinity & Beyond" invites you to explore the endless mysteries of the universe. This platform offers a seamless and high-quality experience on any device. You can choose a subscription plan that suits you and enjoy exclusive content.',
+      },
+      _id: '6787d3fb5f4333c7e61944b7',
+      category: ['Astronomy', 'Frontend'],
+      level: '#High',
+      techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
+      imgLinks: [img1, img2, img3, img4, img5, img6, img7],
+      githubLink: 'https://github.com/abduhamidweb/CosmosSpace',
+      liveDemo: 'https://cosmosdev.netlify.app/',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'Restoran Boshqaruv',
+        ru: 'Управление Рестораном',
+        eng: 'Restaurant Management',
+      },
+      description: {
+        uz: "Restoran buyurtmalarini boshqarish, menyuni sozlash va moliyaviy hisobotlarni ko'rish uchun platforma.",
+        ru: 'Платформа для управления заказами ресторана, настройки меню и просмотра финансовых отчетов.',
+        eng: 'A platform for managing restaurant orders, customizing the menu, and viewing financial reports.',
+      },
+      _id: '2',
+      category: ['Web Application', 'Frontend'],
+      level: '#Medium',
+      techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
+      imgLinks: [img9, img8, img10],
+      githubLink: 'https://github.com/abduhamidweb/Extra',
+      liveDemo: 'https://leafy-biscuit-c5029c.netlify.app/',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'Mamlakatlar Maʼlumotlari',
+        ru: 'Информация о странах',
+        eng: 'Country Info',
+      },
+      description: {
+        uz: 'Dunyo mamlakatlari haqida batafsil maʼlumot olish uchun platforma.',
+        ru: 'Платформа для получения подробной информации о странах мира.',
+        eng: 'A platform for detailed information about countries worldwide.',
+      },
+      _id: '4',
+      category: ['Web Application', 'Frontend'],
+      level: '#Low',
+      techs: ['React', 'JavaScript', 'CSS', 'HTML'],
+      imgLinks: [img11, img12, img133],
+      githubLink: 'https://github.com/abduhamidweb/Countr-ReactJs',
+      liveDemo: 'https://verdant-lollipop-bcb0bb.netlify.app/',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'Restoran Platformasi',
+        ru: 'Платформа ресторана',
+        eng: 'Restaurant Platform',
+      },
+      description: {
+        uz: "Restoran buyurtmalarini boshqarish, menyuni sozlash va moliyaviy hisobotlarni ko'rish uchun platforma.",
+        ru: 'Платформа для управления заказами ресторана, настройки меню и просмотра финансовых отчетов.',
+        eng: 'A platform for managing restaurant orders, customizing the menu, and viewing financial reports.',
+      },
+      _id: '2',
+      category: ['Web Application', 'Frontend'],
+      level: '#High',
+      techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
+      imgLinks: [img13, img14, img15],
+      githubLink: 'https://github.com/abduhamidweb/Extra',
+      liveDemo: 'https://leafy-biscuit-c5029c.netlify.app/',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'Professional Xizmat',
+        ru: 'Профессиональный сервис',
+        eng: 'Professional Service',
+      },
+      description: {
+        uz: "Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan echimlarni yaratamiz.",
+        ru: 'Мы заботимся о каждом клиенте и создаем решения, отвечающие их потребностям.',
+        eng: 'We care about each client and create solutions that meet their needs.',
+      },
+      _id: '3',
+      category: ['Professional', 'Frontend'],
+      level: '#High',
+      techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
+      imgLinks: [img16, img17, img18],
+      githubLink: 'https://quiet-concha-ee2e99.netlify.app/',
+      liveDemo: 'https://quiet-concha-ee2e99.netlify.app/',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'Soʼzlar Dunyosi',
+        ru: 'Мир слов',
+        eng: 'Words World',
+      },
+      description: {
+        uz: "Berilgan so'zlarni toping va ingliz tili va lug'at darajangizni oshiring.",
+        ru: 'Найдите данные слова и улучшите свой уровень английского языка и словарный запас.',
+        eng: 'Find the given words and improve your English and vocabulary skills.',
+      },
+      _id: '7',
+      category: ['Play', 'Frontend'],
+      level: '#Medium',
+      techs: ['JavaScript', 'HTML', 'CSS'],
+      imgLinks: [img19, img20, img21, img22],
+      githubLink: 'https://spiffy-platypus-cfd35d.netlify.app/index.html',
+      liveDemo: 'https://spiffy-platypus-cfd35d.netlify.app/index.html',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'Namoz Vaqtlari',
+        ru: 'Время намаза',
+        eng: 'Prayer Times',
+      },
+      description: {
+        uz: "O'zingizning hududingizga mos bo'lgan namoz vaqtlari saytdan ko'rib, ibodatni vaqtida ado qiling.",
+        ru: 'Смотрите время намаза в вашем регионе и совершайте молитвы вовремя.',
+        eng: 'Check the prayer times for your region and perform prayers on time.',
+      },
+      _id: '8',
+      category: ['Utility', 'Frontend'],
+      level: '#Low',
+      techs: ['React JS'],
+      imgLinks: [img23, img24],
+      githubLink: 'https://nomozvaqtlaridev.netlify.app/',
+      liveDemo: 'https://nomozvaqtlaridev.netlify.app/',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'Mahsulot Landing',
+        ru: 'Посадочная страница продукта',
+        eng: 'Product Landing',
+      },
+      description: {
+        uz: "Muvaffaqiyatli CRM tizimini taqdim etuvchi sahifa. Jamoangiz uchun kuchli vositalar va qulay foydalanish imkoniyatlarini ko'rib chiqing.",
+        ru: 'Страница, предоставляющая успешную CRM систему. Ознакомьтесь с мощными инструментами и удобствами для вашей команды.',
+        eng: 'A page that presents a successful CRM system. Explore powerful tools and convenient features for your team.',
+      },
+      _id: '9',
+      category: ['Landing', 'Frontend'],
+      level: '#Medium',
+      techs: ['React JS', 'Bootstrap', 'CSS'],
+      imgLinks: [img25, img26],
+      githubLink: 'https://resonant-cannoli-bb6330.netlify.app/',
+      liveDemo: 'https://resonant-cannoli-bb6330.netlify.app/',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'Pokemonlar',
+        ru: 'Покемоны',
+        eng: 'Pokemons',
+      },
+      description: {
+        uz: "Bolalar uchun sevimli Pokemonlaringizni ko'rsatuvchi oddiy va qiziqarli loyiha.",
+        ru: 'Простой и увлекательный проект для показа любимых покемонов детям.',
+        eng: 'A simple and fun project to show your favorite Pokemons for kids.',
+      },
+      _id: '10',
+      category: ['Play', 'Frontend'],
+      level: '#Low',
+      techs: ['JavaScript', 'HTML', 'CSS'],
+      imgLinks: [img28, img27, img29],
+      githubLink: 'https://pokemonsdev.netlify.app/',
+      liveDemo: 'https://pokemonsdev.netlify.app/',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'Portfolio',
+        ru: 'Портфолио',
+        eng: 'Portfolio',
+      },
+      description: {
+        uz: "Portfolio loyiham orqali o'zim haqimda ma'lumot, tajriba va ishlarimni namoyish qilaman.",
+        ru: 'С помощью проекта Portfolio я демонстрирую информацию о себе, опыте и своих работах.',
+        eng: 'Through my Portfolio project, I showcase information about myself, my experience, and my work.',
+      },
+      _id: '11',
+      category: ['Personal', 'Frontend'],
+      level: '#Medium',
+      techs: ['ReactJS'],
+      imgLinks: [img30, img31],
+      githubLink: 'https://grand-yeot-1b6cb2.netlify.app/',
+      liveDemo: 'https://grand-yeot-1b6cb2.netlify.app/',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'Sidebar Component',
+        ru: 'Компонент боковой панели',
+        eng: 'Sidebar Component',
+      },
+      description: {
+        uz: "Loyiha responsive sidebar komponentini yaratishga qaratilgan bo'lib, turli qurilmalarda to'g'ri ko'rinishni ta'minlaydi.",
+        ru: 'Проект направлен на создание адаптивного компонента боковой панели, который корректно отображается на разных устройствах.',
+        eng: 'The project focuses on creating a responsive sidebar component that ensures proper display on various devices.',
+      },
+      _id: '12',
+      category: ['UI/UX', 'Frontend'],
+      level: '#Low',
+      techs: ['HTML', 'CSS', 'JavaScript'],
+      imgLinks: [img32, img33],
+      githubLink: 'https://gleeful-chaja-c26a7a.netlify.app/home',
+      liveDemo: 'https://gleeful-chaja-c26a7a.netlify.app/home',
+      __v: 0,
+    },
+    {
+      title: {
+        uz: 'YouTube Clone',
+        ru: 'Клон YouTube',
+        eng: 'YouTube Clone',
+      },
+      description: {
+        uz: "YouTube platformasining ko'rinishini va funksiyalarini o'rganish va qayta yaratish uchun mo'ljallangan loyiha.",
+        ru: 'Проект предназначен для изучения и воспроизведения внешнего вида и функций платформы YouTube.',
+        eng: 'A project designed to study and recreate the look and functionality of the YouTube platform.',
+      },
+      _id: '13',
+      category: ['Clone', 'Frontend'],
+      level: '#Low',
+      techs: ['React', 'CSS', 'Bootstrap'],
+      imgLinks: [img34, img35],
+      githubLink: 'https://youtubeclonedev.netlify.app/',
+      liveDemo: 'https://youtubeclonedev.netlify.app/',
+      __v: 0,
+    },
+  ],
   chatGpt: {
     uz: "Tezkor va kerakli ma'lumotlarni olish uchun so'rov yuboring. ",
     ru: 'Отправьте запрос для получения быстрых и нужных данных. ',
@@ -247,128 +618,6 @@ const portfolioData = {
     },
   ],
 
-  projects: [
-    {
-      title: {
-        uz: 'Cheksizlik Kosmosi',
-        ru: 'Бесконечный Космос',
-        eng: 'Infinity Cosmos',
-      },
-      description: {
-        uz: '"Infinity & Beyond" platformasi sizni koinotning cheksiz sirlarini kashf qilishga chorlaydi. Har qanday qurilmada ishlash imkoniyati bilan bu xizmat qulay va sifatli tajriba taqdim etadi. Turli obuna rejalari orqali siz o\'zingizga mos variantni tanlab, eksklyuziv kontentdan bahramand bo\'lishingiz mumkin.',
-        ru: '"Infinity & Beyond" приглашает вас исследовать бесконечные тайны Вселенной. Эта платформа обеспечивает удобный и качественный опыт на любом устройстве. Вы можете выбрать подходящий тарифный план и наслаждаться эксклюзивным контентом.',
-        eng: '"Infinity & Beyond" invites you to explore the endless mysteries of the universe. This platform offers a seamless and high-quality experience on any device. You can choose a subscription plan that suits you and enjoy exclusive content.',
-      },
-      _id: '6787d3fb5f4333c7e61944b7',
-      category: ['Astronomy', 'Frontend'],
-      level: '#High',
-      techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
-      imgLinks: [img1, img2, img3, img4, img5, img6, img7],
-      githubLink: 'https://github.com/abduhamidweb/CosmosSpace',
-      liveDemo: 'https://cosmosdev.netlify.app/',
-      __v: 0,
-    },
-    {
-      title: {
-        uz: 'Restoran Boshqaruv',
-        ru: 'Управление Рестораном',
-        eng: 'Restaurant Management',
-      },
-      description: {
-        uz: "Restoran buyurtmalarini boshqarish, menyuni sozlash va moliyaviy hisobotlarni ko'rish uchun platforma.",
-        ru: 'Платформа для управления заказами ресторана, настройки меню и просмотра финансовых отчетов.',
-        eng: 'A platform for managing restaurant orders, customizing the menu, and viewing financial reports.',
-      },
-      _id: '2',
-      category: ['Web Application', 'Frontend'],
-      level: '#Medium',
-      techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
-      imgLinks: [img9, img8, img10],
-      githubLink: 'https://github.com/abduhamidweb/Extra',
-      liveDemo: 'https://leafy-biscuit-c5029c.netlify.app/',
-      __v: 0,
-    },
-    {
-      title: {
-        uz: 'Mamlakatlar Maʼlumotlari',
-        ru: 'Информация о странах',
-        eng: 'Country Info',
-      },
-      description: {
-        uz: 'Dunyo mamlakatlari haqida batafsil maʼlumot olish uchun platforma.',
-        ru: 'Платформа для получения подробной информации о странах мира.',
-        eng: 'A platform for detailed information about countries worldwide.',
-      },
-      _id: '4',
-      category: ['Web Application', 'Frontend'],
-      level: '#Low',
-      techs: ['React', 'JavaScript', 'CSS', 'HTML'],
-      imgLinks: [img11, img12, img133],
-      githubLink: 'https://github.com/abduhamidweb/Countr-ReactJs',
-      liveDemo: 'https://verdant-lollipop-bcb0bb.netlify.app/',
-      __v: 0,
-    },
-    {
-      title: {
-        uz: 'Restoran Platformasi',
-        ru: 'Платформа ресторана',
-        eng: 'Restaurant Platform',
-      },
-      description: {
-        uz: "Restoran buyurtmalarini boshqarish, menyuni sozlash va moliyaviy hisobotlarni ko'rish uchun platforma.",
-        ru: 'Платформа для управления заказами ресторана, настройки меню и просмотра финансовых отчетов.',
-        eng: 'A platform for managing restaurant orders, customizing the menu, and viewing financial reports.',
-      },
-      _id: '2',
-      category: ['Web Application', 'Frontend'],
-      level: '#High',
-      techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
-      imgLinks: [img13, img14, img15],
-      githubLink: 'https://github.com/abduhamidweb/Extra',
-      liveDemo: 'https://leafy-biscuit-c5029c.netlify.app/',
-      __v: 0,
-    },
-    {
-      title: {
-        uz: 'Professional Xizmat',
-        ru: 'Профессиональный сервис',
-        eng: 'Professional Service',
-      },
-      description: {
-        uz: "Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan echimlarni yaratamiz.",
-        ru: 'Мы заботимся о каждом клиенте и создаем решения, отвечающие их потребностям.',
-        eng: 'We care about each client and create solutions that meet their needs.',
-      },
-      _id: '3',
-      category: ['Professional', 'Frontend'],
-      level: '#High',
-      techs: ['JavaScript', 'SCSS', 'CSS', 'HTML', 'ReactJs'],
-      imgLinks: [img16, img17, img18],
-      githubLink: 'https://quiet-concha-ee2e99.netlify.app/',
-      liveDemo: 'https://quiet-concha-ee2e99.netlify.app/',
-      __v: 0,
-    },
-    {
-      title: {
-        uz: 'Soʼzlar Dunyosi',
-        ru: 'Мир слов',
-        eng: 'Words World',
-      },
-      description: {
-        uz: "Berilgan so'zlarni toping va ingliz tili va lug'at darajangizni oshiring.",
-        ru: 'Найдите данные слова и улучшите свой уровень английского языка и словарный запас.',
-        eng: 'Find the given words and improve your English and vocabulary skills.',
-      },
-      _id: '7',
-      category: ['Play', 'Frontend'],
-      level: '#Medium',
-      techs: ['JavaScript', 'HTML', 'CSS'],
-      imgLinks: [img19, img20, img21, img22],
-      githubLink: 'https://spiffy-platypus-cfd35d.netlify.app/index.html',
-      liveDemo: 'https://spiffy-platypus-cfd35d.netlify.app/index.html',
-      __v: 0,
-    },
-  ],  
   contact: {
     phone: '+998887497075',
     email: 'abduhamidbotirovwork@gmail.com',
