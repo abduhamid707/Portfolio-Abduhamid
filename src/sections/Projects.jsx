@@ -5,7 +5,11 @@ import { useTranslation } from 'react-i18next';
 import portfolioData from '../db/local.js';
 import i18n from '../i18n.js';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 const Projects = () => {
     const { t } = useTranslation();
     const [categoryFilter, setCategoryFilter] = useState('');
@@ -176,20 +180,16 @@ const Projects = () => {
                 <div className="modal" onClick={closeModal}>
                     <div className="modal-content">
                         <Swiper
-                            spaceBetween={10}
-                            slidesPerView={1}
-                            loop={true}
-                            autoplay={{
-                                delay: 2500,
-                                disableOnInteraction: false,
-                            }}
-                            navigation={{
-                                nextEl: '.swiper-button-next',
-                                prevEl: '.swiper-button-prev',
-                            }}
-                            pagination={{
-                                clickable: true,
-                            }}
+                              spaceBetween={30}
+                              centeredSlides={true}
+                              autoplay={{
+                                  delay: 6000,
+                                  disableOnInteraction: false,
+                              }}
+                              pagination={{
+                                  clickable: true,
+                              }}
+                              modules={[Autoplay, Pagination, Navigation]}
                             className="swiper-container"
                         >
                             {selectedImages.map((image, index) => (
