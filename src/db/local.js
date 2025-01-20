@@ -42,6 +42,9 @@ import full from '../Images/full3.png'
 import img38 from '../Images/38.png'
 import img39 from '../Images/39.png'
 import img40 from '../Images/40.png'
+import img41 from '../Images/41.png'
+import img42 from '../Images/42.png'
+import img43 from '../Images/43.png'
 const portfolioData = {
   projects: [
     {
@@ -77,6 +80,50 @@ const portfolioData = {
     },
     {
       title: {
+        uz: 'Portfolio websayti',
+        ru: 'Вебсайт портфолио',
+        eng: 'Portfolio Website',
+      },
+      description: {
+        uz: "Bu portfolio websayti, unda siz mening tajribam va loyihalarim haqida ma'lumot olishingiz mumkin. Portfolio sifatida foydalanishingiz uchun ideal bo'lishi mumkin.",
+        ru: 'Этот вебсайт портфолио, где вы можете найти информацию о моем опыте и проектах. Он идеально подходит для использования в качестве портфолио.',
+        eng: 'This is a portfolio website where you can find information about my experience and projects. It is ideal for use as a portfolio.',
+      },
+      _id: '17',
+      category: ['Portfolio', 'Frontend'],
+      level: '#High',
+      techs: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS'],
+      imgLinks: [img41, img42, img43],
+      githubLink: 'https://github.com/abduhamid707/Portfolio-Abduhamid',
+      liveDemo: 'https://abduhamid-portfolio-v1.netlify.app/',
+      __v: 0,
+    },
+
+
+    {
+      title: {
+        uz: 'So‘zlarni angla',
+        ru: 'Поймите слова',
+        eng: 'Understand Words',
+      },
+      description: {
+        uz: "Ingliz tilidagi so'zlarni kontekst bilan o'rganing va ularni mustahkamlab, tilni bilish qobiliyatingizni oshiring.",
+        ru: 'Изучайте английские слова в контексте, закрепляйте их и улучшайте свои языковые навыки.',
+        eng: 'Learn English words with context, reinforce them, and improve your language proficiency.',
+      },
+      _id: '14',
+      category: ['Education', 'Frontend'],
+      level: '#Low',
+      techs: ['JavaScript'],
+      imgLinks: [img36],
+      githubLink: 'https://polite-douhua-6bc935.netlify.app/',
+      liveDemo: 'https://polite-douhua-6bc935.netlify.app/',
+      __v: 0,
+    },
+
+
+    {
+      title: {
         uz: 'Startap Bazar',
         ru: 'Рынок Стартапов',
         eng: 'Startup Market',
@@ -108,27 +155,6 @@ const portfolioData = {
       imgLinks: [full],
       githubLink: 'https://github.com/abduhamidweb/startup',
       liveDemo: 'https://github.com/Rasulwebs/startUp_MERN',
-      __v: 0,
-    },
-
-    {
-      title: {
-        uz: 'So‘zlarni angla',
-        ru: 'Поймите слова',
-        eng: 'Understand Words',
-      },
-      description: {
-        uz: "Ingliz tilidagi so'zlarni kontekst bilan o'rganing va ularni mustahkamlab, tilni bilish qobiliyatingizni oshiring.",
-        ru: 'Изучайте английские слова в контексте, закрепляйте их и улучшайте свои языковые навыки.',
-        eng: 'Learn English words with context, reinforce them, and improve your language proficiency.',
-      },
-      _id: '14',
-      category: ['Education', 'Frontend'],
-      level: '#Low',
-      techs: ['JavaScript'],
-      imgLinks: [img36],
-      githubLink: 'https://polite-douhua-6bc935.netlify.app/',
-      liveDemo: 'https://polite-douhua-6bc935.netlify.app/',
       __v: 0,
     },
     {
@@ -234,6 +260,8 @@ const portfolioData = {
       liveDemo: 'https://leafy-biscuit-c5029c.netlify.app/',
       __v: 0,
     },
+  
+
     {
       title: {
         uz: 'Professional Xizmat',

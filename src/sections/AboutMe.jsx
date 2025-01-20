@@ -98,41 +98,50 @@ const AboutMe = () => {
                 <h2 className="text-2xl sm:text-3xl font-bold text-accent mb-5 text-left">
                     {t('aboutMeMore')}
                 </h2>
-                <Swiper
-                    spaceBetween={30}
-                    centeredSlides={true}
-                    autoplay={{
-                        delay: 8000,
-                        disableOnInteraction: false,
-                    }}
-                    pagination={{
-                        clickable: true,
-                        renderBullet: (index, className) => `<span class='${className} text-accent'></span>`,
-                    }}
-                    navigation
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className="w-full"
-                >
-                    {myData.map((item) => (
-                        <SwiperSlide key={item.id}>
-                            <div className="flex flex-col md:flex-row items-center justify-center text-center md:text-left p-6  rounded-lg shadow-lg w-full gap-4">
-                                <div className='text-center w-[100%] flex justify-center'>
-                                    <img
-                                        src={item.img}
-                                        alt={item.title}
-                                        className="w-60 h-100 object-cover rounded-full mb-4 md:mb-0"
-                                    />
-                                </div>
-                                <div className='text-center  w-[100%]'>
-                                    <h3 className=" font-semibold text-accent mb-2 text-center text-2xl">{t(item.title?.[i18n.language])}</h3>
-                                    <p className="text-gray-100 text-lg text-center">{t(item.desc?.[i18n.language])}</p>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-left p-6 rounded-lg shadow-lg w-full gap-4 mt-16">
+                    {/* Rasm slayder tashqarisida */}
 
+                    
+                    <div className="text-center w-[100%] flex justify-center ">
+                        <img
+                            src={myData[0].img}
+                            alt="Main Image"
+                            className="w-60 h-60 object-cover rounded-full mb-4 md:mb-0"
+                        />
+                    </div>
+
+                    {/* Matn uchun Swiper */}
+                    <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                            delay: 2000,
+                            disableOnInteraction: false,
+                        }}
+                        pagination={{
+                            clickable: true,
+                            renderBullet: (index, className) => `<span class='${className} text-accent'></span>`,
+                        }}
+                        // navigation
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="w-full"
+                    >
+                        {myData.map((item) => (
+                            <SwiperSlide key={item.id}>
+                                <div className="text-center w-[100%]">
+                                    <h3 className="font-semibold text-accent mb-2 text-center text-2xl">
+                                        {t(item.title?.[i18n.language])}
+                                    </h3>
+                                    <p className="text-gray-100 text-lg text-center">
+                                        {t(item.desc?.[i18n.language])}
+                                    </p>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
             </div>
+
         </section>
     );
 };
