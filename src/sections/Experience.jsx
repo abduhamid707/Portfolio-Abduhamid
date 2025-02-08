@@ -30,7 +30,9 @@ const Experience = () => {
                                     </td>
                                 </tr>
                             ))}
+
                         </tbody>
+
                     </table>
                 </div>
             </div>

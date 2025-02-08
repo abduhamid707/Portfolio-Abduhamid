@@ -99,7 +99,6 @@ const portfolioData = {
       __v: 0,
     },
 
-
     {
       title: {
         uz: 'So‘zlarni angla',
@@ -120,7 +119,6 @@ const portfolioData = {
       liveDemo: 'https://polite-douhua-6bc935.netlify.app/',
       __v: 0,
     },
-
 
     {
       title: {
@@ -260,7 +258,6 @@ const portfolioData = {
       liveDemo: 'https://leafy-biscuit-c5029c.netlify.app/',
       __v: 0,
     },
-  
 
     {
       title: {
@@ -643,6 +640,42 @@ const portfolioData = {
         eng: 'Strong Junior',
       },
       link: 'https://codecrafters.io/',
+    },
+    {
+      company: {
+        uz: 'Oʻzbekiston Respublikasi Vazirliklari',
+        ru: 'Министерства Республики Узбекистан',
+        eng: 'Ministries of the Republic of Uzbekistan',
+      },
+      duration: {
+        uz: '1 oy (2024)',
+        ru: '1 месяц (2024)',
+        eng: '1 month (2024)',
+      },
+      position: {
+        uz: 'Volontyor Dasturchi',
+        ru: 'Волонтёр Разработчик',
+        eng: 'Volunteer Developer',
+      },
+      link: '',
+    },
+    {
+      company: {
+        uz: 'Surprize.uz',
+        ru: 'Surprize.uz',
+        eng: 'Surprize.uz',
+      },
+      duration: {
+        uz: '1 oy (2024)',
+        ru: '1 месяц (2024)',
+        eng: '1 month (2024)',
+      },
+      position: {
+        uz: 'Volontyor Dasturchi',
+        ru: 'Волонтёр Разработчик',
+        eng: 'Volunteer Developer',
+      },
+      link: 'https://surprize.uz/',
     },
   ],
 

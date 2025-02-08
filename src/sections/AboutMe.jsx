@@ -22,21 +22,6 @@ const AboutMe = () => {
     const { t, i18n } = useTranslation();
     let myData = portfolioData.aboutMeMore;
     const [isTablet, setIsTablet] = useState(false);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsTablet(window.innerWidth >= 768 && window.innerWidth <= 1024); // Planshet diapazoni
-        };
-
-        handleResize(); // Komponent yuklanganda o'lchamni tekshirish
-        window.addEventListener("resize", handleResize); // O'lcham o'zgarganda qayta tekshirish
-        return () => window.removeEventListener("resize", handleResize); // Event listenerni tozalash
-    }, []);
-
-    if (isTablet) {
-        return null; // Planshet holatida sliderni ko'rsatmaymiz
-    }
-
     return (
         <section className="about-me mt-24">
             <div className="container mx-auto px-4">
@@ -63,7 +48,7 @@ const AboutMe = () => {
                     </table>
 
                     {/* Image */}
-                    <Swiper
+                    {/* <Swiper
                         spaceBetween={30}
                         centeredSlides={true}
                         autoplay={{
@@ -89,7 +74,7 @@ const AboutMe = () => {
                             </SwiperSlide>
 
                         ))}
-                    </Swiper>
+                    </Swiper> */}
                 </div>
             </div>
 
@@ -101,7 +86,7 @@ const AboutMe = () => {
                 <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-left p-6 rounded-lg shadow-lg w-full gap-4 mt-16">
                     {/* Rasm slayder tashqarisida */}
 
-                    
+
                     <div className="text-center w-[100%] flex justify-center ">
                         <img
                             src={myData[0].img}
