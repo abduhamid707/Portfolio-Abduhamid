@@ -45,8 +45,56 @@ import img40 from '../Images/40.png'
 import img41 from '../Images/41.png'
 import img42 from '../Images/42.png'
 import img43 from '../Images/43.png'
+import img44 from '../Images/44.png'
+import img45 from '../Images/45.png'
+import img46 from '../Images/46.png'
+import img47 from '../Images/47.png'
 const portfolioData = {
   projects: [
+    {
+      title: {
+      uz: 'Yummy ',
+      ru: 'Yummy',
+      eng: 'Yummy',
+      },
+      description: {
+      uz: '“Yummy” - foydalanuvchilarga mazali retseptlarni topish va ulashish imkonini beruvchi oshxona ilovasi. Bu loyiha intuitiv interfeys va keng qamrovli retseptlar to‘plami bilan pishirish jarayonini soddalashtiradi.',
+      ru: '«Yummy» — это приложение для кухни, которое позволяет пользователям находить и делиться вкусными рецептами. Проект упрощает процесс приготовления благодаря интуитивному интерфейсу и обширной коллекции рецептов.',
+      eng: '“Yummy” is a culinary app that allows users to discover and share delicious recipes. This project simplifies the cooking process with an intuitive interface and a wide range of recipes.',
+      },
+      _id: '16',
+      category: ['Food & Drink', 'Frontend', 'Full Stack'],
+      level: '#in-progress',
+      techs: [
+        "Node Js",
+        "Express Js",
+        "Axios"
+      ],
+      imgLinks: [img46, img47],
+      githubLink: 'https://github.com/abduhamid707/Yummy-v2',
+      liveDemo: 'https://yummy-v2.netlify.app/',
+      __v: 0,
+      },
+    {
+      title: {
+        uz: 'So‘zlarni Yodlash',
+        ru: 'Запоминание Слов',
+        eng: 'Memorize Words',
+      },
+      description: {
+        uz: 'Ushbu loyiha yangi so‘zlarni yodlash va o‘rganish jarayonini osonlashtirish uchun ishlab chiqilgan. Foydalanuvchilar so‘zlarni qo‘shishi va ularni testlar orqali mustahkamlashi mumkin.',
+        ru: 'Этот проект разработан для упрощения процесса запоминания и изучения новых слов. Пользователи могут добавлять слова и закреплять их через тесты.',
+        eng: 'This project is designed to simplify the process of memorizing and learning new words. Users can add words and reinforce them through tests.',
+      },
+      _id: '14',
+      category: ['Education', 'Frontend'],
+      level: '#Medium',
+      techs: ['React.js', 'Tailwind CSS'],
+      imgLinks: [img44,img45],
+      githubLink: 'https://github.com/abduhamid707/memorize-words',
+      liveDemo: 'https://momorize-words-v1.netlify.app/',
+      __v: 0,
+    },
     {
       title: {
         uz: 'Ish Topish',

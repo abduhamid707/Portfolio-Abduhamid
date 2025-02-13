@@ -21,7 +21,7 @@ const Projects = () => {
     const [selectedImages, setSelectedImages] = useState([]);
 
     const categories = ['Full Stack', 'Frontend', 'Backend'];
-    const levels = ['#High', '#Medium', '#Low'];
+    const levels = ['#High', '#Medium', '#Low', '#in-progress'];
 
     // Filter projects based on selected category, level, and tech
     const filteredProjects = projectDatas.filter((item) => {
@@ -127,15 +127,18 @@ const Projects = () => {
                                         {t(item.title?.[i18n.language])}
                                     </h3>
                                     <span
-                                        className={`absolute top-1 right-2 text-xs font-semibold px-2 py-1 rounded  z-10${item.level === "#High"
-                                            ? "text-red-700 bg-red-700"
-                                            : item.level === "#Medium"
-                                                ? "text-yellow-700 bg-yellow-700"
-                                                : "text-green-700 bg-green-700"
+                                        className={`absolute top-1 right-2 text-xs font-semibold px-2 py-1 rounded z-10 ${item.level == "#High"
+                                            ? "text-white bg-red-700"
+                                            : item.level == "#Medium"
+                                                ? "text-white bg-yellow-900"
+                                                : item.level == "#in-progress"
+                                                    ? "text-white bg-yellow-600"
+                                                    : "text-white bg-green-700"
                                             }`}
                                     >
                                         {item.level}
                                     </span>
+
                                 </div>
                                 <p className="text-sm text-light mb-2 text-left">
                                     {expandedProject === item.id
@@ -180,16 +183,16 @@ const Projects = () => {
                 <div className="modal" onClick={closeModal}>
                     <div className="modal-content">
                         <Swiper
-                              spaceBetween={30}
-                              centeredSlides={true}
-                              autoplay={{
-                                  delay: 6000,
-                                  disableOnInteraction: false,
-                              }}
-                              pagination={{
-                                  clickable: true,
-                              }}
-                              modules={[Autoplay, Pagination, Navigation]}
+                            spaceBetween={30}
+                            centeredSlides={true}
+                            autoplay={{
+                                delay: 6000,
+                                disableOnInteraction: false,
+                            }}
+                            pagination={{
+                                clickable: true,
+                            }}
+                            modules={[Autoplay, Pagination, Navigation]}
                             className="swiper-container"
                         >
                             {selectedImages.map((image, index) => (
