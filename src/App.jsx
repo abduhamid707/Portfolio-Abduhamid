@@ -3,11 +3,8 @@ import './App.css';
 import Footer from './Layouts/Footer';
 import Header from './Layouts/Header';
 import Home from './pages/Home';
-import DetailedProject from './sections/DetailedProject';
 import { useEffect } from 'react';
 import ContactButton from './Components/ContactButton';
-import ProjectsCrud from './CRUDS/Projects/ProjectsCrud';
-import EditProject from './CRUDS/Projects/updateProject';
 
 function App() {
   
@@ -95,8 +92,6 @@ function App() {
       <Header />
       <Routes>
         <Route path={'/'} element={<Home />} />
-        <Route path={'/crud/projects'} element={<ProjectsCrud />} />
-        <Route path={'/crud/projects/edit/:id'} element={<EditProject />} />
         {/* <Route path={'/project/:id'} element={<DetailedProject />} /> */}
       </Routes>
       <Footer />
