@@ -71,8 +71,8 @@ const portfolioData = {
         "Axios"
       ],
       imgLinks: [img46, img47],
-      githubLink: 'https://github.com/abduhamid707/Yummy-v2',
-      liveDemo: 'https://yummy-v2.netlify.app/',
+      githubLink: 'https://github.com/abduhamid707/Yummy',
+      liveDemo: 'https://yummy-v1.netlify.app/',
       __v: 0,
       },
     {
