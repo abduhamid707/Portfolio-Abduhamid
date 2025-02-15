@@ -102,8 +102,8 @@ i18n
   .use(initReactI18next) // React bilan integratsiya qilish
   .init({
     resources,
-    lng: 'uz', // dastlabki til
-    fallbackLng: 'uz', // agar til topilmasa, shu tilni ishlatish
+    lng: 'eng', // dastlabki til
+    fallbackLng: 'eng', // agar til topilmasa, shu tilni ishlatish
     interpolation: {
       escapeValue: false, // XSS himoyasi
     },

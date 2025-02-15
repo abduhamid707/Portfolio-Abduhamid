@@ -729,10 +729,10 @@ const portfolioData = {
 
   contact: {
     phone: '+998887497075',
-    email: 'abduhamidbotirovwork@gmail.com',
-    linkedin: 'https://www.linkedin.com/in/abduhamiddev/',
-    instagram: 'https://www.instagram.com/abduhamid.botirov',
     telegram: 'https://t.me/AbduhamidBotirov',
+    email: 'abduhamidbotirovwork@gmail.com',
+    instagram: 'https://www.instagram.com/abduhamid.botirov',
+    linkedin: 'https://www.linkedin.com/in/abduhamiddev/',
     telegramBlog: 'https://t.me/shaxsiy_bosqich',
   },
 }

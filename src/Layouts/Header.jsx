@@ -19,9 +19,9 @@ const Header = () => {
 
           onChange={handleLanguageChange}
         >
+          <option value="eng" className="bg-primary text-accent">Eng</option>
           <option value="uz" className="bg-primary text-accent">Uzb</option>
           <option value="ru" className="bg-primary text-accent">Рус</option>
-          <option value="eng" className="bg-primary text-accent">Eng</option>
         </select>
       </div>
     </header>
