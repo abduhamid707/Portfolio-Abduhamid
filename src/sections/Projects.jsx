@@ -62,49 +62,49 @@ const Projects = () => {
                     {t("projects")}
                 </h2>
 
-                <div className="filter-project flex gap-6 mb-6 justify-start">
-                    {/* Category Filter (Full Stack, Frontend, Backend) */}
-                    <select
-                        value={categoryFilter}
-                        onChange={handleCategoryChange}
-                        className="font-bold text-white bg-gray-900  border border-white rounded-md px-2 py-1 custom-select focus:outline-none"
-                    >
-                        <option value="">{t("allCategories")}</option>
-                        {categories.map((category, index) => (
-                            <option key={index} value={category}>
-                                {category}
-                            </option>
-                        ))}
-                    </select>
+                <div className="filter-project flex flex-wrap gap-6 mb-6 justify-start">
+  {/* Category Filter (Full Stack, Frontend, Backend) */}
+  <select
+    value={categoryFilter}
+    onChange={handleCategoryChange}
+    className="font-bold text-white bg-gray-900 border border-white rounded-md px-2 py-1 custom-select focus:outline-none"
+  >
+    <option value="">{t("allCategories")}</option>
+    {categories.map((category, index) => (
+      <option key={index} value={category}>
+        {category}
+      </option>
+    ))}
+  </select>
 
-                    {/* Level Filter */}
-                    <select
-                        value={levelFilter}
-                        onChange={handleLevelChange}
-                        className="font-bold text-white  bg-gray-900 border border-white rounded-md px-2 py-1 custom-select focus:outline-none"
-                    >
-                        <option value="">{t("allLevels")}</option>
-                        {levels.map((level, index) => (
-                            <option key={index} value={level}>
-                                {level}
-                            </option>
-                        ))}
-                    </select>
+  {/* Level Filter */}
+  <select
+    value={levelFilter}
+    onChange={handleLevelChange}
+    className="font-bold text-white bg-gray-900 border border-white rounded-md px-2 py-1 custom-select focus:outline-none"
+  >
+    <option value="">{t("allLevels")}</option>
+    {levels.map((level, index) => (
+      <option key={index} value={level}>
+        {level}
+      </option>
+    ))}
+  </select>
 
-                    {/* Tech Filter */}
-                    <select
-                        value={techFilter}
-                        onChange={handleTechChange}
-                        className="font-bold text-white  bg-gray-900 border border-white rounded-md px-2 py-1 custom-select focus:outline-none"
-                    >
-                        <option value="">{t("allTechs")}</option>
-                        {projectTechs.map((tech, index) => (
-                            <option key={index} value={tech}>
-                                {tech}
-                            </option>
-                        ))}
-                    </select>
-                </div>
+  {/* Tech Filter */}
+  <select
+    value={techFilter}
+    onChange={handleTechChange}
+    className="font-bold text-white bg-gray-900 border border-white rounded-md px-2 py-1 custom-select focus:outline-none"
+  >
+    <option value="">{t("allTechs")}</option>
+    {projectTechs.map((tech, index) => (
+      <option key={index} value={tech}>
+        {tech}
+      </option>
+    ))}
+  </select>
+</div>
 
                 {/* Project Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
