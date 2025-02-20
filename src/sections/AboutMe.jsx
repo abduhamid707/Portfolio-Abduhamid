@@ -13,7 +13,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import my_img3 from "../../src/Images/meTop4.png";
 import my_img4 from "../../src/Images/meTop5.png";
 import { resources } from '../i18n.js';
-
+import competetion from "../../src/Images/competition.png";
 Modal.setAppElement('#root');
 
 
@@ -23,6 +23,10 @@ const AboutMe = () => {
 
     return (
         <section className="about-me mt-24" >
+                {/* <div 
+                className="absolute inset-0 bg-cover bg-center z-[-1] opacity-20" 
+                style={{ backgroundImage: `url(${competetion})` }}
+            ></div> */}
             <div className="container mx-auto px-4">
                 <h2 className="text-2xl sm:text-3xl font-bold text-accent mb-5 text-left">
                     {t('aboutMe')}
