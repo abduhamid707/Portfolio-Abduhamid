@@ -12,18 +12,17 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import my_img3 from "../../src/Images/meTop4.png";
 import my_img4 from "../../src/Images/meTop5.png";
+import { resources } from '../i18n.js';
+
 Modal.setAppElement('#root');
 
+
+
 const AboutMe = () => {
-    const images = [
-        { src: my_img4, alt: "Image 4" },
-        { src: my_img3, alt: "Image 3" },
-    ];
     const { t, i18n } = useTranslation();
-    let myData = portfolioData.aboutMeMore;
-    const [isTablet, setIsTablet] = useState(false);
+
     return (
-        <section className="about-me mt-24">
+        <section className="about-me mt-24" >
             <div className="container mx-auto px-4">
                 <h2 className="text-2xl sm:text-3xl font-bold text-accent mb-5 text-left">
                     {t('aboutMe')}
@@ -77,55 +76,40 @@ const AboutMe = () => {
                     </Swiper> */}
                 </div>
             </div>
-
-
             <div className="container mt-24">
                 <h2 className="text-2xl sm:text-3xl font-bold text-accent mb-5 text-left">
-                    {t('aboutMeMore')}
+                    {t('myAchivements')}
                 </h2>
-                <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-left p-6 rounded-lg shadow-lg w-full gap-4 mt-16">
-                    {/* Rasm slayder tashqarisida */}
-
-
-                    <div className="text-center w-[100%] flex justify-center ">
-                        <img
-                            src={myData[0].img}
-                            alt="Main Image"
-                            className="w-60 h-60 object-cover rounded-full mb-4 md:mb-0"
-                        />
-                    </div>
-
-                    {/* Matn uchun Swiper */}
-                    <Swiper
-                        spaceBetween={30}
-                        centeredSlides={true}
-                        autoplay={{
-                            delay: 2000,
-                            disableOnInteraction: false,
-                        }}
-                        pagination={{
-                            clickable: true,
-                            renderBullet: (index, className) => `<span class='${className} text-accent'></span>`,
-                        }}
-                        // navigation
-                        modules={[Autoplay, Pagination, Navigation]}
-                        className="w-full"
-                    >
-                        {myData.map((item) => (
-                            <SwiperSlide key={item.id}>
-                                <div className="text-center w-[100%]">
-                                    <h3 className="font-semibold text-accent mb-2 text-center text-2xl">
-                                        {t(item.title?.[i18n.language])}
-                                    </h3>
-                                    <p className="text-gray-100 text-lg text-center">
-                                        {t(item.desc?.[i18n.language])}
-                                    </p>
+                <Swiper
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false
+                    }}
+                    pagination={{ clickable: true }}
+                    navigation={false}
+                    modules={[Autoplay, Pagination, Navigation]}
+                    className="w-full h-[60vh] mySwiper rounded-lg overflow-hidden"
+                >
+                    {resources.achievements.map((item, index) => (
+                        <SwiperSlide key={index} className="relative">
+                            <div className="w-full h-full relative">
+                                <img
+                                    src={item.img}
+                                    alt={`Achievement ${index + 1}`}
+                                    className="w-full h-full object-cover rounded-lg brightness-75"
+                                />
+                                <div className="absolute w-[80%]  bottom-[15%] left-1/2 transform -translate-x-1/2 bg-black bg-opacity-20  text-white text-lg font-semibold px-4 py-2 rounded ">
+                                    {item.text[i18n.language]}
                                 </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-                </div>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+
             </div>
+
 
         </section>
     );

@@ -48,7 +48,6 @@ const Contact = () => {
       target="_blank"
       rel="noopener noreferrer"
       className="group relative flex items-center justify-center border border-accent bg-accent bg-opacity-5 text-white text-white p-3 rounded-full shadow-md transition-all duration-150 w-[50px] h-[50px] hover:w-max hover:rounded-[40px]"
-      // className="group relative flex items-center justify-center border border-accent  text-white p-3 rounded-full shadow-md transition-all duration-150 w-[50px] h-[50px] hover:w-max hover:rounded-[40px]"
     >
       <i className={`bi ${contact.icon} text-lg flex items-center justify-center text-accent `} />
       <span className="ml-2 text-sm whitespace-nowrap hidden group-hover:block">
