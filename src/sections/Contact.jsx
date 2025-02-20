@@ -1,11 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
 import portfolioData from '../db/local.js';
 
 const Contact = () => {
   const { t } = useTranslation();
-  const [activeIcon, setActiveIcon] = useState(null);
-
   const contacts = [
     { id: 'phone', icon: 'bi-telephone', link: `tel:${portfolioData.contact.phone}`, text: portfolioData.contact.phone },
     { id: 'telegram', icon: 'bi-telegram', link: portfolioData.contact.telegram, text: 'Telegram' },
@@ -13,8 +10,8 @@ const Contact = () => {
     { id: 'instagram', icon: 'bi-instagram', link: portfolioData.contact.instagram, text: 'Instagram' },
     { id: 'linkedin', icon: 'bi-linkedin', link: portfolioData.contact.linkedin, text: 'LinkedIn' },
     { id: 'blog', icon: 'bi-pen', link: portfolioData.contact.telegramBlog, text: 'My personal blog' },
+    { id: 'blog', icon: 'bi-pen', link: '/blog', text: 'My technical blog' },
   ];
-
   return (
     <section className="contact mt-20 relative">
       <div className="container mx-auto px-4">
@@ -40,7 +37,7 @@ const Contact = () => {
       </div>
 
       {/* Ikonchalar */}
-      <div className="fixed right-4 top-56 flex flex-col gap-3 items-end " >
+      <div className="fixed right-4 top-1/4 flex flex-col gap-3 items-end " >
   {contacts.map((contact) => (
     <a
       key={contact.id}

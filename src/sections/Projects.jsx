@@ -15,7 +15,6 @@ const Projects = () => {
     const [categoryFilter, setCategoryFilter] = useState('');
     const [levelFilter, setLevelFilter] = useState('');
     const [techFilter, setTechFilter] = useState('');
-    const [projectDatas, setProjectDatas] = useState(portfolioData.projects);
     const [projectTechs, setProjectTechs] = useState([...new Set(portfolioData.projects.flatMap((item) => item.techs))]);
     const [expandedProject, setExpandedProject] = useState(null);
     const [selectedImages, setSelectedImages] = useState([]);
@@ -24,6 +23,12 @@ const Projects = () => {
     const levels = ['#High', '#Medium', '#Low', '#in-progress'];
 
     // Filter projects based on selected category, level, and tech
+    const sortedProjects = [...portfolioData.projects].sort((a, b) => {
+        const priority = { '#in-progress': 1, '#High': 2, '#Medium': 3, '#Low': 4 };
+        return priority[a.level] - priority[b.level];
+    });
+    const [projectDatas, setProjectDatas] = useState(sortedProjects);
+
     const filteredProjects = projectDatas.filter((item) => {
         const matchesCategory = !categoryFilter || item.category[1] === categoryFilter || item.category[2] === categoryFilter;
         const matchesLevel = !levelFilter || item.level === levelFilter;
@@ -151,10 +156,17 @@ const Projects = () => {
                                         {expandedProject === item.id ? " close" : "...more"}
                                     </span>
                                 </p>
-                                <p className="text-sm mt-3 mb-7 text-left">
-                                    {item.techs.join(", ")}
+                                <p className="text-sm mt-3 mb-10 text-left flex  flex-wrap gap-y-1">
+                                    {item.techs.map((tech, index) => (
+                                        <span
+                                            key={index}
+                                            className="bg-gray-800 text-white px-2 py-1  rounded-lg mr-2 text-xs font-semibold "
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
                                 </p>
-                                <div className="flex mt-4 justify-between items-center absolute w-full bottom-3 gap-6">
+                                <div className="flex mt-10 justify-between items-center absolute w-full bottom-3 gap-6">
                                     <a
                                         href={item.githubLink}
                                         target="_blank"

@@ -5,6 +5,8 @@ import Header from './Layouts/Header';
 import Home from './pages/Home';
 import { useEffect } from 'react';
 import ContactButton from './Components/ContactButton';
+import BlogDetail from './sections/BlogDetail';
+import BlogsPage from './sections/BlogsPage';
 
 function App() {
   
@@ -92,7 +94,8 @@ function App() {
       <Header />
       <Routes>
         <Route path={'/'} element={<Home />} />
-        {/* <Route path={'/project/:id'} element={<DetailedProject />} /> */}
+        <Route path={'/blog'} element={<BlogsPage />} />
+        <Route path={'/blog/:id'} element={<BlogDetail />} />
       </Routes>
       <Footer />
     </>

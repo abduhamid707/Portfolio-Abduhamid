@@ -53,28 +53,24 @@ const portfolioData = {
   projects: [
     {
       title: {
-      uz: 'Yummy ',
-      ru: 'Yummy',
-      eng: 'Yummy',
+        uz: 'Yummy ',
+        ru: 'Yummy',
+        eng: 'Yummy',
       },
       description: {
-      uz: '“Yummy” - foydalanuvchilarga mazali retseptlarni topish va ulashish imkonini beruvchi oshxona ilovasi. Bu loyiha intuitiv interfeys va keng qamrovli retseptlar to‘plami bilan pishirish jarayonini soddalashtiradi.',
-      ru: '«Yummy» — это приложение для кухни, которое позволяет пользователям находить и делиться вкусными рецептами. Проект упрощает процесс приготовления благодаря интуитивному интерфейсу и обширной коллекции рецептов.',
-      eng: '“Yummy” is a culinary app that allows users to discover and share delicious recipes. This project simplifies the cooking process with an intuitive interface and a wide range of recipes.',
+        uz: '“Yummy” - foydalanuvchilarga mazali retseptlarni topish va ulashish imkonini beruvchi oshxona ilovasi. Bu loyiha intuitiv interfeys va keng qamrovli retseptlar to‘plami bilan pishirish jarayonini soddalashtiradi.',
+        ru: '«Yummy» — это приложение для кухни, которое позволяет пользователям находить и делиться вкусными рецептами. Проект упрощает процесс приготовления благодаря интуитивному интерфейсу и обширной коллекции рецептов.',
+        eng: '“Yummy” is a culinary app that allows users to discover and share delicious recipes. This project simplifies the cooking process with an intuitive interface and a wide range of recipes.',
       },
       _id: '16',
       category: ['Food & Drink', 'Frontend', 'Full Stack'],
       level: '#in-progress',
-      techs: [
-        "Node Js",
-        "Express Js",
-        "Axios"
-      ],
+      techs: ['Node Js', 'Express Js', 'Axios'],
       imgLinks: [img46, img47],
       githubLink: 'https://github.com/abduhamid707/Yummy',
-      liveDemo: 'https://yummy-v1.netlify.app/', 
+      liveDemo: 'https://yummy-v1.netlify.app/',
       __v: 0,
-      },
+    },
     {
       title: {
         uz: 'So‘zlarni Yodlash',
@@ -90,7 +86,7 @@ const portfolioData = {
       category: ['Education', 'Frontend'],
       level: '#Medium',
       techs: ['React.js', 'Tailwind CSS'],
-      imgLinks: [img44,img45],
+      imgLinks: [img44, img45],
       githubLink: 'https://github.com/abduhamid707/memorize-words',
       liveDemo: 'https://momorize-words-v1.netlify.app/',
       __v: 0,
@@ -735,5 +731,68 @@ const portfolioData = {
     linkedin: 'https://www.linkedin.com/in/abduhamiddev/',
     telegramBlog: 'https://t.me/shaxsiy_bosqich',
   },
+  blogData: [
+    {
+      id: 1,
+      title: 'HTML nima?',
+      description:
+        'HTML (HyperText Markup Language) — bu veb-sahifalarni yaratish uchun ishlatiladigan belgilash tili. U sahifaning tuzilishini aniqlaydi.',
+    },
+    {
+      id: 2,
+      title: 'HTML elementlari va teglar',
+      description:
+        'HTML sahifalar turli teglar yordamida yaratiladi. Har bir element ochilish va yopilish teglari orasida joylashadi.',
+    },
+    {
+      id: 3,
+      title: 'HTML atributlari',
+      description:
+        'HTML atributlari elementlarga qo‘shimcha ma’lumot qo‘shish uchun ishlatiladi. Masalan, `href` atributi link manzilini belgilaydi.',
+    },
+    {
+      id: 4,
+      title: 'HTML sarlavhalari',
+      description:
+        'HTMLda `h1` dan `h6` gacha bo‘lgan sarlavha teglar mavjud bo‘lib, ular matnni turli darajada urg‘ulashga yordam beradi.',
+    },
+    {
+      id: 5,
+      title: 'HTML paragraflari',
+      description:
+        '`<p>` tegi yordamida matnni paragraflarga ajratish mumkin. Bu sahifadagi matnlarni tartibli ko‘rinishda chiqarishga yordam beradi.',
+    },
+    {
+      id: 6,
+      title: 'HTMLda rasm qo‘shish',
+      description:
+        '`<img>` tegi yordamida veb-sahifalarga rasm qo‘shish mumkin. `src` atributi orqali rasm manbasi ko‘rsatiladi.',
+    },
+    {
+      id: 7,
+      title: 'HTMLda link yaratish',
+      description:
+        'Link yaratish uchun `<a>` tegi ishlatiladi. Masalan: `<a href="https://example.com">Saytga o‘tish</a>`.',
+    },
+    {
+      id: 8,
+      title: 'HTML jadvali',
+      description:
+        'Jadval yaratish uchun `<table>` tegi ishlatiladi. U ichida `<tr>` (qator), `<td>` (katak) kabi teglar mavjud.',
+    },
+    {
+      id: 9,
+      title: 'HTML shakllari',
+      description:
+        'Foydalanuvchi bilan o‘zaro aloqada bo‘lish uchun `<form>` tegi ishlatiladi. U turli input maydonlarini o‘z ichiga olishi mumkin.',
+    },
+    {
+      id: 10,
+      title: 'HTML5 va uning yangi imkoniyatlari',
+      description:
+        'HTML5 video va audio teglar, `<canvas>` grafik chizish vositasi kabi ko‘plab yangi funksiyalarni taklif etadi.',
+    },
+    
+  ],
 }
 export default portfolioData
