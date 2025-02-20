@@ -104,7 +104,7 @@ const AboutMe = () => {
                                     {item.text[i18n.language]}
                                 </div>
                             </div>
-                        </SwiperSlide>
+                        </SwiperSlide> 
                     ))}
                 </Swiper>
 
