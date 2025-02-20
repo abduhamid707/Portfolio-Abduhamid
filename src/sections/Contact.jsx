@@ -40,14 +40,14 @@ const Contact = () => {
       </div>
 
       {/* Ikonchalar */}
-      <div className="fixed right-4 top-56 flex flex-col gap-3 items-end">
+      <div className="fixed right-4 top-56 flex flex-col gap-3 items-end " >
   {contacts.map((contact) => (
     <a
       key={contact.id}
       href={contact.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative flex items-center justify-center border border-accent bg-accent bg-opacity-5 text-white text-white p-3 rounded-full shadow-md transition-all duration-150 w-[50px] h-[50px] hover:w-max hover:rounded-[40px]"
+      className="group -z-0 relative flex items-center justify-center border border-accent bg-accent bg-opacity-5 text-white text-white p-3 rounded-full shadow-md transition-all duration-150 w-[50px] h-[50px] hover:w-max hover:rounded-[40px]"
     >
       <i className={`bi ${contact.icon} text-lg flex items-center justify-center text-accent `} />
       <span className="ml-2 text-sm whitespace-nowrap hidden group-hover:block">

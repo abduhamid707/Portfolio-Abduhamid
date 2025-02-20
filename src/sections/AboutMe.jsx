@@ -90,18 +90,18 @@ const AboutMe = () => {
                     pagination={{ clickable: true }}
                     navigation={false}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="w-full h-[60vh] mySwiper rounded-lg overflow-hidden"
+                    className="w-full h-[60vh] mySwiper rounded-lg overflow-hidden  z-10"
                 >
                     {resources.achievements.map((item, index) => (
-                        <SwiperSlide key={index} className="relative">
-                            <div className="w-full h-full relative">
+                        <SwiperSlide key={index} className="relative z-10">
+                            <div className="w-full h-full relative z-10">
                                 <img
                                     src={item.img}
                                     alt={`Achievement ${index + 1}`}
-                                    className="w-full h-full object-cover rounded-lg brightness-75"
+                                    className="w-full h-full z-10 object-cover rounded-lg brightness-75"
                                 />
-                                <div className="absolute w-[80%]  bottom-[15%] left-1/2 transform -translate-x-1/2 bg-black bg-opacity-20  text-white text-lg font-semibold px-4 py-2 rounded ">
-                                    {item.text[i18n.language]}
+                                <div className="absolute w-[80%]   bottom-[15%] left-1/2 transform -translate-x-1/2 bg-black bg-opacity-20  text-white text-lg font-semibold px-4 py-2 rounded ">
+                                    {item.text[i18n.language]} 
                                 </div>
                             </div>
                         </SwiperSlide> 
