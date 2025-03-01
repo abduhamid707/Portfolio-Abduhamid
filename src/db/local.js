@@ -642,9 +642,9 @@ const portfolioData = {
         eng: 'Skills',
       },
       value: {
-        uz: 'JavaScript, TypeScript, React, Node.js, TailwindCSS, HTML, CSS, MongoDb, Postgres SQL, Redux/Redux Toolkit',
-        ru: 'JavaScript, TypeScript, React, Node.js, TailwindCSS, HTML, CSS, MongoDb, Postgres SQL, Redux/Redux Toolkit',
-        eng: 'JavaScript, TypeScript, React, Node.js, TailwindCSS, HTML, CSS, MongoDb, Postgres SQL, Redux/Redux Toolkit',
+        uz: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'TailwindCSS', 'HTML', 'CSS', 'MongoDB', 'PostgreSQL', 'Redux/Redux Toolkit', 'GraphQL'],
+        ru: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'TailwindCSS', 'HTML', 'CSS', 'MongoDB', 'PostgreSQL', 'Redux/Redux Toolkit', 'GraphQL'],
+        eng: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'TailwindCSS', 'HTML', 'CSS', 'MongoDB', 'PostgreSQL', 'Redux/Redux Toolkit', 'GraphQL'],
       },
     },
   ],
@@ -792,7 +792,6 @@ const portfolioData = {
       description:
         'HTML5 video va audio teglar, `<canvas>` grafik chizish vositasi kabi ko‘plab yangi funksiyalarni taklif etadi.',
     },
-    
   ],
 }
 export default portfolioData

@@ -41,12 +41,22 @@ const AboutMe = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {portfolioData.aboutme.map((item) => (
-                                <tr key={item.key} className="border-t border-accent">
-                                    <th className="px-4 py-2 border border-accent">{t(item.label?.[i18n.language])}</th>
-                                    <td className="px-4 py-2 border border-accent text-gray-100">{t(item.value?.[i18n.language])}</td>
-                                </tr>
-                            ))}
+                        {portfolioData.aboutme.map((item) => (
+  <tr key={item.key} className="border-t border-accent">
+    <th className="px-4 py-2 border border-accent">{t(item.label?.[i18n.language])}</th>
+    <td className="px-4 py-2 border border-accent text-gray-100">
+      {item.key === 'skills' ? (
+        item.value[i18n.language].map((skill, index) => (
+          <span key={index} className="bg-gray-800 text-white px-2 py-1 rounded-lg mr-2 text-xs font-semibold font">
+            {skill}
+          </span>
+        ))
+      ) : (
+        t(item.value?.[i18n.language])
+      )}
+    </td>
+  </tr>
+))}
                         </tbody>
                     </table>
 
