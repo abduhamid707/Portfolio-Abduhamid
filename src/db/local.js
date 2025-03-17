@@ -143,26 +143,26 @@ const portfolioData = {
       __v: 0,
     },
 
-    {
-      title: {
-        uz: 'So‘zlarni angla',
-        ru: 'Поймите слова',
-        eng: 'Understand Words',
-      },
-      description: {
-        uz: "Ingliz tilidagi so'zlarni kontekst bilan o'rganing va ularni mustahkamlab, tilni bilish qobiliyatingizni oshiring.",
-        ru: 'Изучайте английские слова в контексте, закрепляйте их и улучшайте свои языковые навыки.',
-        eng: 'Learn English words with context, reinforce them, and improve your language proficiency.',
-      },
-      _id: '14',
-      category: ['Education', 'Frontend'],
-      level: '#Low',
-      techs: ['JavaScript'],
-      imgLinks: [img36],
-      githubLink: 'https://polite-douhua-6bc935.netlify.app/',
-      liveDemo: 'https://polite-douhua-6bc935.netlify.app/',
-      __v: 0,
-    },
+    // {
+    //   title: {
+    //     uz: 'So‘zlarni angla',
+    //     ru: 'Поймите слова',
+    //     eng: 'Understand Words',
+    //   },
+    //   description: {
+    //     uz: "Ingliz tilidagi so'zlarni kontekst bilan o'rganing va ularni mustahkamlab, tilni bilish qobiliyatingizni oshiring.",
+    //     ru: 'Изучайте английские слова в контексте, закрепляйте их и улучшайте свои языковые навыки.',
+    //     eng: 'Learn English words with context, reinforce them, and improve your language proficiency.',
+    //   },
+    //   _id: '14',
+    //   category: ['Education', 'Frontend'],
+    //   level: '#Low',
+    //   techs: ['JavaScript'],
+    //   imgLinks: [img36],
+    //   githubLink: 'https://polite-douhua-6bc935.netlify.app/',
+    //   liveDemo: 'https://polite-douhua-6bc935.netlify.app/',
+    //   __v: 0,
+    // },
 
     {
       title: {
@@ -199,28 +199,28 @@ const portfolioData = {
       liveDemo: 'https://github.com/Rasulwebs/startUp_MERN',
       __v: 0,
     },
-    {
-      title: {
-        uz: 'Madaniy merosi',
-        ru: 'Культурное наследие',
-        eng: 'Cultural Heritage',
-      },
-      description: {
-        uz: "O'zbekistonning nomoddiy madaniy merosi haqida ma'lumot beruvchi sayt. Milliy madaniyatimizni yanada chuqurroq anglash uchun.",
-        ru: 'Сайт, предоставляющий информацию о нематериальном культурном наследии Узбекистана. Для более глубокого понимания нашей национальной культуры.',
-        eng: 'A website providing information about Uzbekistan’s intangible cultural heritage. Designed to deepen the understanding of our national culture.',
-      },
-      _id: '15',
-      category: ['Education', 'Frontend'],
-      level: '#Low',
-      techs: ['ReactJS', 'CSS'],
-      imgLinks: [img37, img38],
-      githubLink:
-        'https://678a8e50f0cfce00a621d0cf--silly-zabaione-029031.netlify.app/',
-      liveDemo:
-        'https://678a8e50f0cfce00a621d0cf--silly-zabaione-029031.netlify.app/',
-      __v: 0,
-    },
+    // {
+    //   title: {
+    //     uz: 'Madaniy merosi',
+    //     ru: 'Культурное наследие',
+    //     eng: 'Cultural Heritage',
+    //   },
+    //   description: {
+    //     uz: "O'zbekistonning nomoddiy madaniy merosi haqida ma'lumot beruvchi sayt. Milliy madaniyatimizni yanada chuqurroq anglash uchun.",
+    //     ru: 'Сайт, предоставляющий информацию о нематериальном культурном наследии Узбекистана. Для более глубокого понимания нашей национальной культуры.',
+    //     eng: 'A website providing information about Uzbekistan’s intangible cultural heritage. Designed to deepen the understanding of our national culture.',
+    //   },
+    //   _id: '15',
+    //   category: ['Education', 'Frontend'],
+    //   level: '#Low',
+    //   techs: ['ReactJS', 'CSS'],
+    //   imgLinks: [img37, img38],
+    //   githubLink:
+    //     'https://678a8e50f0cfce00a621d0cf--silly-zabaione-029031.netlify.app/',
+    //   liveDemo:
+    //     'https://678a8e50f0cfce00a621d0cf--silly-zabaione-029031.netlify.app/',
+    //   __v: 0,
+    // },
 
     {
       title: {
@@ -262,26 +262,26 @@ const portfolioData = {
       liveDemo: 'https://leafy-biscuit-c5029c.netlify.app/',
       __v: 0,
     },
-    {
-      title: {
-        uz: 'Mamlakatlar Maʼlumotlari',
-        ru: 'Информация о странах',
-        eng: 'Country Info',
-      },
-      description: {
-        uz: 'Dunyo mamlakatlari haqida batafsil maʼlumot olish uchun platforma.',
-        ru: 'Платформа для получения подробной информации о странах мира.',
-        eng: 'A platform for detailed information about countries worldwide.',
-      },
-      _id: '4',
-      category: ['Web Application', 'Frontend'],
-      level: '#Low',
-      techs: ['React', 'JavaScript', 'CSS', 'HTML'],
-      imgLinks: [img11, img12, img133],
-      githubLink: 'https://github.com/abduhamidweb/Countr-ReactJs',
-      liveDemo: 'https://verdant-lollipop-bcb0bb.netlify.app/',
-      __v: 0,
-    },
+    // {
+    //   title: {
+    //     uz: 'Mamlakatlar Maʼlumotlari',
+    //     ru: 'Информация о странах',
+    //     eng: 'Country Info',
+    //   },
+    //   description: {
+    //     uz: 'Dunyo mamlakatlari haqida batafsil maʼlumot olish uchun platforma.',
+    //     ru: 'Платформа для получения подробной информации о странах мира.',
+    //     eng: 'A platform for detailed information about countries worldwide.',
+    //   },
+    //   _id: '4',
+    //   category: ['Web Application', 'Frontend'],
+    //   level: '#Low',
+    //   techs: ['React', 'JavaScript', 'CSS', 'HTML'],
+    //   imgLinks: [img11, img12, img133],
+    //   githubLink: 'https://github.com/abduhamidweb/Countr-ReactJs',
+    //   liveDemo: 'https://verdant-lollipop-bcb0bb.netlify.app/',
+    //   __v: 0,
+    // },
     {
       title: {
         uz: 'Restoran Platformasi',
@@ -343,26 +343,26 @@ const portfolioData = {
       liveDemo: 'https://spiffy-platypus-cfd35d.netlify.app/index.html',
       __v: 0,
     },
-    {
-      title: {
-        uz: 'Namoz Vaqtlari',
-        ru: 'Время намаза',
-        eng: 'Prayer Times',
-      },
-      description: {
-        uz: "O'zingizning hududingizga mos bo'lgan namoz vaqtlari saytdan ko'rib, ibodatni vaqtida ado qiling.",
-        ru: 'Смотрите время намаза в вашем регионе и совершайте молитвы вовремя.',
-        eng: 'Check the prayer times for your region and perform prayers on time.',
-      },
-      _id: '8',
-      category: ['Utility', 'Frontend'],
-      level: '#Low',
-      techs: ['React JS'],
-      imgLinks: [img23, img24],
-      githubLink: 'https://nomozvaqtlaridev.netlify.app/',
-      liveDemo: 'https://nomozvaqtlaridev.netlify.app/',
-      __v: 0,
-    },
+    // {
+    //   title: {
+    //     uz: 'Namoz Vaqtlari',
+    //     ru: 'Время намаза',
+    //     eng: 'Prayer Times',
+    //   },
+    //   description: {
+    //     uz: "O'zingizning hududingizga mos bo'lgan namoz vaqtlari saytdan ko'rib, ibodatni vaqtida ado qiling.",
+    //     ru: 'Смотрите время намаза в вашем регионе и совершайте молитвы вовремя.',
+    //     eng: 'Check the prayer times for your region and perform prayers on time.',
+    //   },
+    //   _id: '8',
+    //   category: ['Utility', 'Frontend'],
+    //   level: '#Low',
+    //   techs: ['React JS'],
+    //   imgLinks: [img23, img24],
+    //   githubLink: 'https://nomozvaqtlaridev.netlify.app/',
+    //   liveDemo: 'https://nomozvaqtlaridev.netlify.app/',
+    //   __v: 0,
+    // },
     {
       title: {
         uz: 'Mahsulot Landing',
@@ -383,26 +383,26 @@ const portfolioData = {
       liveDemo: 'https://resonant-cannoli-bb6330.netlify.app/',
       __v: 0,
     },
-    {
-      title: {
-        uz: 'Pokemonlar',
-        ru: 'Покемоны',
-        eng: 'Pokemons',
-      },
-      description: {
-        uz: "Bolalar uchun sevimli Pokemonlaringizni ko'rsatuvchi oddiy va qiziqarli loyiha.",
-        ru: 'Простой и увлекательный проект для показа любимых покемонов детям.',
-        eng: 'A simple and fun project to show your favorite Pokemons for kids.',
-      },
-      _id: '10',
-      category: ['Play', 'Frontend'],
-      level: '#Low',
-      techs: ['JavaScript', 'HTML', 'CSS'],
-      imgLinks: [img28, img27, img29],
-      githubLink: 'https://pokemonsdev.netlify.app/',
-      liveDemo: 'https://pokemonsdev.netlify.app/',
-      __v: 0,
-    },
+    // {
+    //   title: {
+    //     uz: 'Pokemonlar',
+    //     ru: 'Покемоны',
+    //     eng: 'Pokemons',
+    //   },
+    //   description: {
+    //     uz: "Bolalar uchun sevimli Pokemonlaringizni ko'rsatuvchi oddiy va qiziqarli loyiha.",
+    //     ru: 'Простой и увлекательный проект для показа любимых покемонов детям.',
+    //     eng: 'A simple and fun project to show your favorite Pokemons for kids.',
+    //   },
+    //   _id: '10',
+    //   category: ['Play', 'Frontend'],
+    //   level: '#Low',
+    //   techs: ['JavaScript', 'HTML', 'CSS'],
+    //   imgLinks: [img28, img27, img29],
+    //   githubLink: 'https://pokemonsdev.netlify.app/',
+    //   liveDemo: 'https://pokemonsdev.netlify.app/',
+    //   __v: 0,
+    // },
     {
       title: {
         uz: 'Portfolio',
@@ -423,46 +423,46 @@ const portfolioData = {
       liveDemo: 'https://grand-yeot-1b6cb2.netlify.app/',
       __v: 0,
     },
-    {
-      title: {
-        uz: 'Sidebar Component',
-        ru: 'Компонент боковой панели',
-        eng: 'Sidebar Component',
-      },
-      description: {
-        uz: "Loyiha responsive sidebar komponentini yaratishga qaratilgan bo'lib, turli qurilmalarda to'g'ri ko'rinishni ta'minlaydi.",
-        ru: 'Проект направлен на создание адаптивного компонента боковой панели, который корректно отображается на разных устройствах.',
-        eng: 'The project focuses on creating a responsive sidebar component that ensures proper display on various devices.',
-      },
-      _id: '12',
-      category: ['UI/UX', 'Frontend'],
-      level: '#Low',
-      techs: ['HTML', 'CSS', 'JavaScript'],
-      imgLinks: [img32, img33],
-      githubLink: 'https://gleeful-chaja-c26a7a.netlify.app/home',
-      liveDemo: 'https://gleeful-chaja-c26a7a.netlify.app/home',
-      __v: 0,
-    },
-    {
-      title: {
-        uz: 'YouTube Clone',
-        ru: 'Клон YouTube',
-        eng: 'YouTube Clone',
-      },
-      description: {
-        uz: "YouTube platformasining ko'rinishini va funksiyalarini o'rganish va qayta yaratish uchun mo'ljallangan loyiha.",
-        ru: 'Проект предназначен для изучения и воспроизведения внешнего вида и функций платформы YouTube.',
-        eng: 'A project designed to study and recreate the look and functionality of the YouTube platform.',
-      },
-      _id: '13',
-      category: ['Clone', 'Frontend'],
-      level: '#Low',
-      techs: ['React', 'CSS', 'Bootstrap'],
-      imgLinks: [img34, img35],
-      githubLink: 'https://youtubeclonedev.netlify.app/',
-      liveDemo: 'https://youtubeclonedev.netlify.app/',
-      __v: 0,
-    },
+    // {
+    //   title: {
+    //     uz: 'Sidebar Component',
+    //     ru: 'Компонент боковой панели',
+    //     eng: 'Sidebar Component',
+    //   },
+    //   description: {
+    //     uz: "Loyiha responsive sidebar komponentini yaratishga qaratilgan bo'lib, turli qurilmalarda to'g'ri ko'rinishni ta'minlaydi.",
+    //     ru: 'Проект направлен на создание адаптивного компонента боковой панели, который корректно отображается на разных устройствах.',
+    //     eng: 'The project focuses on creating a responsive sidebar component that ensures proper display on various devices.',
+    //   },
+    //   _id: '12',
+    //   category: ['UI/UX', 'Frontend'],
+    //   level: '#Low',
+    //   techs: ['HTML', 'CSS', 'JavaScript'],
+    //   imgLinks: [img32, img33],
+    //   githubLink: 'https://gleeful-chaja-c26a7a.netlify.app/home',
+    //   liveDemo: 'https://gleeful-chaja-c26a7a.netlify.app/home',
+    //   __v: 0,
+    // },
+    // {
+    //   title: {
+    //     uz: 'YouTube Clone',
+    //     ru: 'Клон YouTube',
+    //     eng: 'YouTube Clone',
+    //   },
+    //   description: {
+    //     uz: "YouTube platformasining ko'rinishini va funksiyalarini o'rganish va qayta yaratish uchun mo'ljallangan loyiha.",
+    //     ru: 'Проект предназначен для изучения и воспроизведения внешнего вида и функций платформы YouTube.',
+    //     eng: 'A project designed to study and recreate the look and functionality of the YouTube platform.',
+    //   },
+    //   _id: '13',
+    //   category: ['Clone', 'Frontend'],
+    //   level: '#Low',
+    //   techs: ['React', 'CSS', 'Bootstrap'],
+    //   imgLinks: [img34, img35],
+    //   githubLink: 'https://youtubeclonedev.netlify.app/',
+    //   liveDemo: 'https://youtubeclonedev.netlify.app/',
+    //   __v: 0,
+    // },
   ],
   chatGpt: {
     uz: "Tezkor va kerakli ma'lumotlarni olish uchun so'rov yuboring. ",
