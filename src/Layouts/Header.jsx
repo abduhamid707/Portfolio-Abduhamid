@@ -17,7 +17,7 @@ const Header = () => {
 
         <div className='flex items-center gap-4'>
         <a
-          href="https://drive.usercontent.google.com/u/0/uc?id=1s-47VQP6q5xQRpt5XV9GCraaenBv8QiG&export=download"
+          href="https://drive.google.com/file/d/1Zxft1Vokuao5KzpOVs0NPXaHrNYEFuP_/view"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-accent text-primary font-bold px-4 py-1 rounded-md hover:opacity-80 transition"
